@@ -1,0 +1,14 @@
+# Fichiers vidéos volumineux (bloqués par GitHub si > 100 Mo)
+# Les vidéos MP4 téléchargées restent sur votre machine locale dans assets/videos/
+assets/videos/*.mp4
+
+# Scripts d'extraction et temporaires
+*.py
+image_catalog.json
+video_catalog.json
+extracted_data.json
+editor.html
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

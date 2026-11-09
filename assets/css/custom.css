@@ -1,0 +1,171 @@
+/* ==========================================================================
+   PORTFOLIO VIVIEN SALMON - CUSTOM CSS
+   Styles complémentaires, typographie, lecteur vidéo et lightbox
+   ========================================================================== */
+
+/* Typographie & Couleurs de base */
+:root {
+  --bg-color: #0b105b;
+  --text-main: #ffffff;
+  --text-muted: #d0d4e4;
+  --accent-color: #4a6bff;
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body, html {
+  background-color: var(--bg-color) !important;
+  color: var(--text-main);
+  font-family: var(--font-family) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remplacer les polices TypeKit par Montserrat */
+.ftnk, [class*="ftnk"],
+.shzc, [class*="shzc"],
+.logo, .title, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family) !important;
+}
+
+/* Image et vignettes - transitions fluides */
+img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-loaded {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Animation survol des projets en page d'accueil */
+.project-cover {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-cover:hover {
+  transform: translateY(-4px);
+}
+
+.project-cover .cover-image img {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-cover:hover .cover-image img {
+  transform: scale(1.03);
+}
+
+/* Style des vidéos */
+.video-player-wrapper {
+  background: #000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.portfolio-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+}
+
+/* Navigation active */
+.nav-container a.active,
+.site-header nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+/* Hamburger mobile */
+.hamburger-click-area {
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .hamburger-click-area {
+    display: block;
+  }
+  
+  .nav-container {
+    display: none;
+  }
+
+  .nav-container.open {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #0b105b;
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-container.open a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.92);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  animation: fadeIn 0.25s ease;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90vh;
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+  animation: zoomIn 0.25s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+
+/* Curseur zoom sur images agrandissables */
+.lightbox-link, .js-lightbox, .gallery-item img {
+  cursor: pointer;
+}
