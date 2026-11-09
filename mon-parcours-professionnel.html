@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mes expériences et formations | Vivien Salmon</title>
-  <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
+  <title>Parcours — Vivien Salmon | Portfolio</title>
+  <meta name="description" content="Portfolio de Vivien Salmon : créateur de contenus, vidéaste, graphiste et chargé de communication (Master 2 UCO Angers). En recherche d'un poste / stage.">
   <meta name="author" content="Vivien Salmon">
 
+  <!-- Préchargement rapide des polices pour éliminer tout temps de latence -->
+  <link rel="preload" href="assets/fonts/ftnk-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ftnk-400.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Mes expériences et formations | Vivien Salmon">
-  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
+  <meta property="og:title" content="Parcours — Vivien Salmon">
+  <meta property="og:description" content="Découvrez les réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
   <meta property="og:type" content="website">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="stylesheet" href="assets/css/viewer.css">
   <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-title">Vivien Salmon</span>
-        <span class="brand-badge">Portfolio 2025</span>
+        <span class="brand-monogram">VS</span>
+        <div class="brand-info">
+          <span class="brand-title">Vivien Salmon</span>
+          <span class="brand-sub">Communication & Création de Contenus</span>
+        </div>
       </a>
+      <div class="header-status-pill">
+        <span class="pulse-dot"></span>
+        <span>En recherche active de poste / stage</span>
+      </div>
       <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
       <nav>
         <ul class="nav-links" id="nav-menu">
           <li class="nav-item"><a href="index.html" class="">Accueil</a></li>
-<li class="nav-item"><a href="presentation.html" class="">Qui suis-je ?</a></li>
-<li class="nav-item"><a href="mon-parcours-professionnel.html" class="active">Parcours & Formations</a></li>
+<li class="nav-item"><a href="presentation.html" class="">À propos</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="active">Parcours</a></li>
 <li class="nav-item"><a href="mes-videos.html" class="">Vidéos</a></li>
 <li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
 <li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
-<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photographie</a></li>
 <li class="nav-item"><a href="contact.html" class="">Contact</a></li>
 
         </ul>
@@ -42,75 +54,81 @@
 
   <main class="page-container">
     <div class="page-header">
-      <span class="page-badge">Parcours & Formations</span>
-      <h1 class="page-title">Mes Expériences & Formations</h1>
-      <p class="page-lead">Depuis 2021, j'ai effectué une licence Information-Communication à l'UCO d'Angers, et je poursuis actuellement mon Master en Communication Numérique et Conception Multimédia, toujours à l'UCO d'Angers.</p>
+      <span class="page-badge">Formation & Cursus</span>
+      <h1 class="page-title">Mon Parcours Universitaire</h1>
+      <p class="page-lead">Cinq années d'études exigeantes au sein de l'Université Catholique de l'Ouest (UCO) d'Angers, axées sur la stratégie de communication et la production de médias digitaux.</p>
     </div>
 
-    <div class="glass-card">
-      <h2 class="glass-card-title"><span class="icon">🎓</span> Cursus Académique à l'UCO d'Angers</h2>
-      <div class="prose">
-        <p>Mon parcours universitaire m'a permis d'acquérir une double compétence : <strong>stratégique</strong> (gestion de projet, communication d'influence, veille concurrentielle, SEO) et <strong>technique</strong> (audiovisuel, graphisme, montage, intégration web).</p>
+    <!-- Timeline des études -->
+    <div class="glass-card" style="margin-bottom: 40px;">
+      <h2 class="glass-card-title"><span class="icon">🏛️</span> Les Deux Grandes Étapes de mon cursus</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 20px;">
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 14px; padding: 24px;">
+          <span style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase;">2024 — 2026 (En cours)</span>
+          <h3 style="font-size: 1.25rem; color: #fff; font-weight: 700; margin: 8px 0 12px;">Master Communication Numérique & Multimédia</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+            Formation professionnalisante axée sur la stratégie éditoriale, le brand content, la gestion de projet web, le référencement naturel (SEO), le cadrage juridique des données et la direction artistique.
+          </p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 14px; padding: 24px;">
+          <span style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase;">2021 — 2024</span>
+          <h3 style="font-size: 1.25rem; color: #fff; font-weight: 700; margin: 8px 0 12px;">Licence Information & Communication</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+            Apprentissage des théories de la communication, de la sociologie des médias, de l'expression écrite journalistique, de l'analyse sémiologique de l'image et de la prise de parole en public.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="image-grid">
-      <div class="image-card" onclick="openLightbox('assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png')">
-        <img src="assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png" alt="Parcours universitaire UCO Angers" loading="lazy">
-        <div class="image-card-caption">Parcours universitaire UCO Angers</div>
+    <div class="section-block">
+      <h2 class="section-title">🖼️ Synthèse Graphique du Cursus & Compétences</h2>
+      <p style="color: var(--text-muted); margin-bottom: 20px;">Cliquez sur un schéma pour l'agrandir en haute définition.</p>
+      <div class="image-grid">
+      <div class="image-card" onclick="openGalleryLightbox(0)">
+        <img src="assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png" alt="Parcours universitaire UCO Angers — De la Licence au Master 2" loading="lazy" decoding="async">
+        <div class="image-card-caption">Parcours universitaire UCO Angers — De la Licence au Master 2</div>
       </div>
-      <div class="image-card" onclick="openLightbox('assets/images/27639173-3260-4185-90f0-26c542fbb1ac.jpg')">
-        <img src="assets/images/27639173-3260-4185-90f0-26c542fbb1ac.jpg" alt="Compétences & Outils de communication" loading="lazy">
-        <div class="image-card-caption">Compétences & Outils de communication</div>
+      <div class="image-card" onclick="openGalleryLightbox(0)">
+        <img src="assets/images/27639173-3260-4185-90f0-26c542fbb1ac.jpg" alt="Compétences clés : Stratégie, Contenus, SEO & Multimédia" loading="lazy" decoding="async">
+        <div class="image-card-caption">Compétences clés : Stratégie, Contenus, SEO & Multimédia</div>
       </div>
-      <div class="image-card" onclick="openLightbox('assets/images/f4123b06-f0a8-4523-bf49-e5df4d0a6a2e.jpg')">
-        <img src="assets/images/f4123b06-f0a8-4523-bf49-e5df4d0a6a2e.jpg" alt="Formation multimédia & création de contenus" loading="lazy">
-        <div class="image-card-caption">Formation multimédia & création de contenus</div>
+      <div class="image-card" onclick="openGalleryLightbox(0)">
+        <img src="assets/images/f4123b06-f0a8-4523-bf49-e5df4d0a6a2e.jpg" alt="Projets d'études & mises en situation d'agence" loading="lazy" decoding="async">
+        <div class="image-card-caption">Projets d'études & mises en situation d'agence</div>
       </div>
-      <div class="image-card" onclick="openLightbox('assets/images/759ad901-af7d-4322-9037-a3ccea8f15f6.png')">
-        <img src="assets/images/759ad901-af7d-4322-9037-a3ccea8f15f6.png" alt="Compétences techniques & projets" loading="lazy">
-        <div class="image-card-caption">Compétences techniques & projets</div>
+      <div class="image-card" onclick="openGalleryLightbox(0)">
+        <img src="assets/images/759ad901-af7d-4322-9037-a3ccea8f15f6.png" alt="Maîtrise technique : Outils Adobe, Caméras & Code" loading="lazy" decoding="async">
+        <div class="image-card-caption">Maîtrise technique : Outils Adobe, Caméras & Code</div>
       </div>
 
+      </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      <div class="footer-brand">
+        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage & graphisme.
+        <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">UCO Angers • Master 2 Communication Numérique & Conception Multimédia</div>
       </div>
-      <div>
-        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
-        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
-        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
+      <div class="footer-links">
+        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'email</button>
+        <a href="mailto:vivien.salmon9@gmail.com" class="footer-link">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
       </div>
     </div>
   </footer>
 
-  <!-- Lightbox Modal -->
-  <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
-  </div>
-
+  <!-- Scripts du visionneur cinéma et lightbox sans redirection -->
+  <script src="assets/js/viewer.js"></script>
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
       if (menu) menu.classList.toggle('open');
     }
-    function openLightbox(src) {
-      const modal = document.getElementById('image-lightbox');
-      const img = document.getElementById('lightbox-img');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function closeLightbox() {
-      document.getElementById('image-lightbox').style.display = 'none';
-    }
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
   </script>
 </body>
 </html>

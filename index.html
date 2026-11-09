@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil | Vivien Salmon</title>
-  <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
+  <title>Accueil — Vivien Salmon | Portfolio</title>
+  <meta name="description" content="Portfolio de Vivien Salmon : créateur de contenus, vidéaste, graphiste et chargé de communication (Master 2 UCO Angers). En recherche d'un poste / stage.">
   <meta name="author" content="Vivien Salmon">
 
+  <!-- Préchargement rapide des polices pour éliminer tout temps de latence -->
+  <link rel="preload" href="assets/fonts/ftnk-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ftnk-400.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Accueil | Vivien Salmon">
-  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
+  <meta property="og:title" content="Accueil — Vivien Salmon">
+  <meta property="og:description" content="Découvrez les réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
   <meta property="og:type" content="website">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="stylesheet" href="assets/css/viewer.css">
   <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-title">Vivien Salmon</span>
-        <span class="brand-badge">Portfolio 2025</span>
+        <span class="brand-monogram">VS</span>
+        <div class="brand-info">
+          <span class="brand-title">Vivien Salmon</span>
+          <span class="brand-sub">Communication & Création de Contenus</span>
+        </div>
       </a>
+      <div class="header-status-pill">
+        <span class="pulse-dot"></span>
+        <span>En recherche active de poste / stage</span>
+      </div>
       <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
       <nav>
         <ul class="nav-links" id="nav-menu">
           <li class="nav-item"><a href="index.html" class="active">Accueil</a></li>
-<li class="nav-item"><a href="presentation.html" class="">Qui suis-je ?</a></li>
-<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="presentation.html" class="">À propos</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours</a></li>
 <li class="nav-item"><a href="mes-videos.html" class="">Vidéos</a></li>
 <li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
 <li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
-<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photographie</a></li>
 <li class="nav-item"><a href="contact.html" class="">Contact</a></li>
 
         </ul>
@@ -44,117 +56,143 @@
     <div class="hero-container">
       <div class="hero-badge">
         <span class="pulse"></span>
-        <span>À la recherche d'un stage de fin d'études dès avril 2026</span>
+        <span>Recherche active : Poste ou Stage de fin d'études dès Avril 2026</span>
       </div>
       <h1 class="hero-title">
-        Vivien Salmon<br>
-        <span class="gradient-text">Communication & Création de Contenus</span>
+        L'impact de l'image,<br>
+        <span class="gradient-text">la précision du message.</span>
       </h1>
       <p class="hero-subtitle">
-        Étudiant en Master 2 Communication Numérique & Conception Multimédia à l'UCO d'Angers.<br>
-        Spécialisé dans la réalisation audiovisuelle, le graphisme, le web et la communication sportive.
+        Je m'appelle <strong>Vivien Salmon</strong>. Bientôt diplômé d'un Master 2 en Communication Numérique à l'UCO d'Angers, je conçois des contenus audiovisuels, des stratégies social media et des identités visuelles conçus pour marquer les esprits.
       </p>
+
+      <!-- Key figures / Credibility chips -->
       <div class="hero-chips">
-        <div class="chip">🎓 Master 2 UCO Angers</div>
-        <div class="chip">🎬 Montage DaVinci & Premiere</div>
-        <div class="chip">🎨 Suite Adobe (Photoshop, Illustrator)</div>
-        <div class="chip">⚽ Passionné de Sport</div>
-        <div class="chip">📍 Laval / Angers</div>
+        <div class="chip">📹 <strong>Sony α7 III</strong> & Montage DaVinci / Premiere</div>
+        <div class="chip">✍️ <strong>+40 articles</strong> Ouest-France & France Bleu</div>
+        <div class="chip">📱 <strong>Formats courts</strong> TikTok & Instagram Reels</div>
+        <div class="chip">⚽ <strong>Culture sport</strong> & Bénévolat FFVolley</div>
       </div>
-      <div style="display: flex; justify-content: center; gap: 16px;">
-        <a href="contact.html" class="btn btn-primary">Me contacter ✉️</a>
-        <a href="presentation.html" class="btn btn-secondary">Découvrir mon profil →</a>
+
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 12px;">
+        <a href="contact.html" class="btn btn-primary">Me contacter pour un entretien ✉️</a>
+        <a href="mes-videos.html" class="btn btn-secondary">Voir mon travail vidéo 🎬</a>
       </div>
     </div>
   </section>
   <main class="main-content">
+    <div style="margin-bottom: 28px; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--border-glass); padding-bottom: 14px;">
+      <div>
+        <span style="font-size: 0.8rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Sommaire des réalisations</span>
+        <h2 style="font-size: 1.5rem; color: #fff; font-weight: 800; font-family: var(--font-heading);">6 Chapitres de Réalisations</h2>
+      </div>
+      <div style="font-size: 0.88rem; color: var(--text-muted);">Cliquez sur un projet pour le découvrir en détail</div>
+    </div>
     <div class="projects-grid">
       <a href="presentation.html" class="project-card">
         <div class="card-media">
-          <img src="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" alt="Qui suis-je ?" loading="lazy">
-          <span class="card-badge">2025</span>
+          <img src="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" alt="Qui suis-je ? — Parcours, vision & univers" loading="lazy" decoding="async">
+          <span class="card-badge">Profil & ADN Créatif</span>
         </div>
         <div class="card-body">
-          <div class="card-meta">Profil & Présentation</div>
-          <h2 class="card-title">Qui suis-je ?</h2>
-          <p class="card-desc">Mon profil, ma formation en Master 2 à l'UCO d'Angers, mes passions (sport, audiovisuel, échecs, voyages) et mon CV vidéo.</p>
+          <div class="card-meta">
+            <span style="font-family: monospace; color: var(--accent-cyan); font-weight: 700;">01</span>
+            <span>// PROJET</span>
+          </div>
+          <h2 class="card-title">Qui suis-je ? — Parcours, vision & univers</h2>
+          <p class="card-desc">Mon profil de communicant, ma pratique sportive de compétition, mon œil derrière la caméra Sony α7 III, la rigueur tactique des échecs et mon CV vidéo en immersion.</p>
           <div class="card-footer">
-            <span>Explorer le projet</span>
+            <span>Explorer le chapitre</span>
             <span class="card-arrow">→</span>
           </div>
         </div>
       </a>
       <a href="mon-parcours-professionnel.html" class="project-card">
         <div class="card-media">
-          <img src="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" alt="Mes expériences et formations" loading="lazy">
-          <span class="card-badge">2025</span>
+          <img src="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" alt="Formations & Écosystème de compétences" loading="lazy" decoding="async">
+          <span class="card-badge">Master 2 UCO Angers</span>
         </div>
         <div class="card-body">
-          <div class="card-meta">Parcours Académique & Pro</div>
-          <h2 class="card-title">Mes expériences et formations</h2>
-          <p class="card-desc">Licence Information-Communication et Master Communication Numérique & Conception Multimédia à l'UCO d'Angers.</p>
+          <div class="card-meta">
+            <span style="font-family: monospace; color: var(--accent-cyan); font-weight: 700;">02</span>
+            <span>// PROJET</span>
+          </div>
+          <h2 class="card-title">Formations & Écosystème de compétences</h2>
+          <p class="card-desc">De la théorie de l'information à la stratégie de contenu multimédia : 5 années d'études à l'UCO d'Angers alliant rigueur stratégique et production terrain.</p>
           <div class="card-footer">
-            <span>Explorer le projet</span>
+            <span>Explorer le chapitre</span>
             <span class="card-arrow">→</span>
           </div>
         </div>
       </a>
       <a href="mes-videos.html" class="project-card">
         <div class="card-media">
-          <img src="assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" alt="Mes vidéos" loading="lazy">
-          <span class="card-badge">2025</span>
+          <img src="assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" alt="Réalisation Audiovisuelle & Montage" loading="lazy" decoding="async">
+          <span class="card-badge">9 Réalisations Vidéo</span>
         </div>
         <div class="card-body">
-          <div class="card-meta">Réalisation Audiovisuelle</div>
-          <h2 class="card-title">Mes vidéos</h2>
-          <p class="card-desc">9 créations vidéos : Festival Premiers Plans, Réels Capfun Lila, SCO Handball, portrait promotionnel sportif CROUS.</p>
+          <div class="card-meta">
+            <span style="font-family: monospace; color: var(--accent-cyan); font-weight: 700;">03</span>
+            <span>// PROJET</span>
+          </div>
+          <h2 class="card-title">Réalisation Audiovisuelle & Montage</h2>
+          <p class="card-desc">Du reportage de festival de cinéma (Premiers Plans) aux réels verticaux dynamiques pour Capfun, en passant par l'adrénaline des matchs de handball.</p>
           <div class="card-footer">
-            <span>Explorer le projet</span>
+            <span>Explorer le chapitre</span>
             <span class="card-arrow">→</span>
           </div>
         </div>
       </a>
       <a href="mes-graphismes.html" class="project-card">
         <div class="card-media">
-          <img src="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" alt="Mes projets graphiques / web" loading="lazy">
-          <span class="card-badge">2025</span>
+          <img src="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" alt="Création Graphique, Presse & Développement Web" loading="lazy" decoding="async">
+          <span class="card-badge">Direction Artistique & Web</span>
         </div>
         <div class="card-body">
-          <div class="card-meta">Graphisme & Dev Web</div>
-          <h2 class="card-title">Mes projets graphiques / web</h2>
-          <p class="card-desc">Logo personnel, affiches Capfun & Handisport, +40 articles de presse Ouest-France & France Bleu, et sites web codés.</p>
+          <div class="card-meta">
+            <span style="font-family: monospace; color: var(--accent-cyan); font-weight: 700;">04</span>
+            <span>// PROJET</span>
+          </div>
+          <h2 class="card-title">Création Graphique, Presse & Développement Web</h2>
+          <p class="card-desc">Identité visuelle, affiches événementielles, +40 articles signés pour Ouest-France et France Bleu, et plateformes web codées (Ducs d'Angers & Gestes Foot).</p>
           <div class="card-footer">
-            <span>Explorer le projet</span>
+            <span>Explorer le chapitre</span>
             <span class="card-arrow">→</span>
           </div>
         </div>
       </a>
       <a href="experiences-significatives.html" class="project-card">
         <div class="card-media">
-          <img src="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" alt="Expériences significatives" loading="lazy">
-          <span class="card-badge">2025</span>
+          <img src="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" alt="Expériences de Terrain & Missions Clés" loading="lazy" decoding="async">
+          <span class="card-badge">Terrain & Responsabilités</span>
         </div>
         <div class="card-body">
-          <div class="card-meta">Missions Clés</div>
-          <h2 class="card-title">Expériences significatives</h2>
-          <p class="card-desc">Community Manager Capfun Lila, Cadreur bénévole FFVolley, Stage France Bleu Mayenne et Comité Handisport.</p>
+          <div class="card-meta">
+            <span style="font-family: monospace; color: var(--accent-cyan); font-weight: 700;">05</span>
+            <span>// PROJET</span>
+          </div>
+          <h2 class="card-title">Expériences de Terrain & Missions Clés</h2>
+          <p class="card-desc">Community Management au Capfun Lila, cadrage direct pour la Fédération Française de Volley, journalisme radio web chez France Bleu et communication Handisport.</p>
           <div class="card-footer">
-            <span>Explorer le projet</span>
+            <span>Explorer le chapitre</span>
             <span class="card-arrow">→</span>
           </div>
         </div>
       </a>
       <a href="photos.html" class="project-card">
         <div class="card-media">
-          <img src="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" alt="Photos" loading="lazy">
-          <span class="card-badge">2025</span>
+          <img src="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" alt="Série Photographique — Prise sur le vif" loading="lazy" decoding="async">
+          <span class="card-badge">Photographie</span>
         </div>
         <div class="card-body">
-          <div class="card-meta">Photographie</div>
-          <h2 class="card-title">Photos</h2>
-          <p class="card-desc">Galerie de 15 photographies prises au Capfun Lila avec mon iPhone. Découverte des ambiances, paysages et activités.</p>
+          <div class="card-meta">
+            <span style="font-family: monospace; color: var(--accent-cyan); font-weight: 700;">06</span>
+            <span>// PROJET</span>
+          </div>
+          <h2 class="card-title">Série Photographique — Prise sur le vif</h2>
+          <p class="card-desc">15 clichés captés au cœur de la saison estivale. Lumières naturelles, textures d'eau et instants de vie saisis sans artifice.</p>
           <div class="card-footer">
-            <span>Explorer le projet</span>
+            <span>Explorer le chapitre</span>
             <span class="card-arrow">→</span>
           </div>
         </div>
@@ -165,40 +203,26 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      <div class="footer-brand">
+        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage & graphisme.
+        <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">UCO Angers • Master 2 Communication Numérique & Conception Multimédia</div>
       </div>
-      <div>
-        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
-        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
-        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
+      <div class="footer-links">
+        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'email</button>
+        <a href="mailto:vivien.salmon9@gmail.com" class="footer-link">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
       </div>
     </div>
   </footer>
 
-  <!-- Lightbox Modal -->
-  <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
-  </div>
-
+  <!-- Scripts du visionneur cinéma et lightbox sans redirection -->
+  <script src="assets/js/viewer.js"></script>
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
       if (menu) menu.classList.toggle('open');
     }
-    function openLightbox(src) {
-      const modal = document.getElementById('image-lightbox');
-      const img = document.getElementById('lightbox-img');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function closeLightbox() {
-      document.getElementById('image-lightbox').style.display = 'none';
-    }
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
   </script>
 </body>
 </html>

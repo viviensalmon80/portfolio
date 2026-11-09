@@ -1,0 +1,335 @@
+/* ==========================================================================
+   THEATER & LIGHTBOX MODAL - EXPÉRIENCE CINÉMA SANS REDIRECTION
+   ========================================================================== */
+
+/* Backdrop overlay */
+.theater-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(4, 6, 20, 0.94);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  overflow-y: auto;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.theater-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Modal Content Box */
+.theater-dialog {
+  background: rgba(13, 18, 54, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(79, 70, 229, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: scale(0.96);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theater-modal.active .theater-dialog {
+  transform: scale(1);
+}
+
+/* Modal for vertical reels (9:16) */
+.theater-dialog.vertical-mode {
+  max-width: 520px;
+}
+
+/* Header bar inside modal */
+.theater-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 10, 35, 0.6);
+}
+
+.theater-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.theater-badge {
+  background: rgba(99, 102, 241, 0.2);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.theater-title {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.theater-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theater-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.theater-btn:hover {
+  background: rgba(99, 102, 241, 0.4);
+  border-color: #6366f1;
+  color: #38bdf8;
+  transform: scale(1.05);
+}
+
+.theater-btn-close {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  margin-left: 8px;
+}
+
+.theater-btn-close:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* Screen container for video */
+.theater-screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.theater-dialog.vertical-mode .theater-screen {
+  aspect-ratio: 9 / 16;
+  max-height: 72vh;
+}
+
+.theater-screen iframe,
+.theater-screen video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Footer context bar inside modal */
+.theater-footer {
+  padding: 18px 24px;
+  background: rgba(7, 10, 35, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theater-desc {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.theater-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.theater-tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.theater-tool-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   IMAGE LIGHTBOX (GALERIE D'ART)
+   ========================================================================== */
+.gallery-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(3, 5, 18, 0.96);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.gallery-lightbox.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-main-wrap {
+  position: relative;
+  max-width: 90vw;
+  max-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-main-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+  user-select: none;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-main-img.zoomed {
+  transform: scale(1.4);
+  cursor: zoom-out;
+}
+
+.lightbox-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.lightbox-nav-btn:hover {
+  background: #6366f1;
+  color: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav-btn.prev {
+  left: -28px;
+}
+
+.lightbox-nav-btn.next {
+  right: -28px;
+}
+
+.lightbox-caption-bar {
+  margin-top: 18px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.lightbox-caption-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.lightbox-caption-counter {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.lightbox-top-close {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lightbox-top-close:hover {
+  background: #ef4444;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .theater-modal {
+    padding: 12px;
+  }
+  .theater-header {
+    padding: 12px 16px;
+  }
+  .theater-title {
+    font-size: 0.98rem;
+  }
+  .lightbox-nav-btn.prev {
+    left: 8px;
+  }
+  .lightbox-nav-btn.next {
+    right: 8px;
+  }
+}

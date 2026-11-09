@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qui suis-je ? | Vivien Salmon</title>
-  <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
+  <title>À propos — Vivien Salmon | Portfolio</title>
+  <meta name="description" content="Portfolio de Vivien Salmon : créateur de contenus, vidéaste, graphiste et chargé de communication (Master 2 UCO Angers). En recherche d'un poste / stage.">
   <meta name="author" content="Vivien Salmon">
 
+  <!-- Préchargement rapide des polices pour éliminer tout temps de latence -->
+  <link rel="preload" href="assets/fonts/ftnk-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ftnk-400.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Qui suis-je ? | Vivien Salmon">
-  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
+  <meta property="og:title" content="À propos — Vivien Salmon">
+  <meta property="og:description" content="Découvrez les réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
   <meta property="og:type" content="website">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="stylesheet" href="assets/css/viewer.css">
   <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-title">Vivien Salmon</span>
-        <span class="brand-badge">Portfolio 2025</span>
+        <span class="brand-monogram">VS</span>
+        <div class="brand-info">
+          <span class="brand-title">Vivien Salmon</span>
+          <span class="brand-sub">Communication & Création de Contenus</span>
+        </div>
       </a>
+      <div class="header-status-pill">
+        <span class="pulse-dot"></span>
+        <span>En recherche active de poste / stage</span>
+      </div>
       <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
       <nav>
         <ul class="nav-links" id="nav-menu">
           <li class="nav-item"><a href="index.html" class="">Accueil</a></li>
-<li class="nav-item"><a href="presentation.html" class="active">Qui suis-je ?</a></li>
-<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="presentation.html" class="active">À propos</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours</a></li>
 <li class="nav-item"><a href="mes-videos.html" class="">Vidéos</a></li>
 <li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
 <li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
-<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photographie</a></li>
 <li class="nav-item"><a href="contact.html" class="">Contact</a></li>
 
         </ul>
@@ -42,53 +54,54 @@
 
   <main class="page-container">
     <div class="page-header">
-      <span class="page-badge">Présentation</span>
-      <h1 class="page-title">Qui suis-je ?</h1>
-      <p class="page-lead">Découvrez mon parcours, mes compétences et ce qui m'anime au quotidien dans l'univers de la communication et de la création de contenus.</p>
+      <span class="page-badge">À propos</span>
+      <h1 class="page-title">Un profil de communicant complet, ancré dans le réel</h1>
+      <p class="page-lead">De la conception stratégique à la prise de vue sur le terrain, je combine créativité visuelle, esprit d'analyse et maîtrise des outils de diffusion modernes.</p>
     </div>
 
     <div class="profile-grid">
       <div class="profile-avatar-wrap">
-        <img src="assets/images/452bf5c5-27b3-4df2-a961-ef2768ff21f6.jpg" alt="Vivien Salmon" class="profile-avatar" onclick="openLightbox('assets/images/452bf5c5-27b3-4df2-a961-ef2768ff21f6.jpg')">
+        <img src="assets/images/452bf5c5-27b3-4df2-a961-ef2768ff21f6.jpg" alt="Vivien Salmon portrait" class="profile-avatar zoomable-img">
         <div class="profile-chips">
-          <div class="profile-chip">📍 Originaire de Laval (né en 2003)</div>
-          <div class="profile-chip">🎓 Master 2 UCO Angers</div>
-          <div class="profile-chip">📷 Sony a7 III & DaVinci Resolve</div>
+          <div class="profile-chip">🎂 Né en 2003 à Laval (Mayenne)</div>
+          <div class="profile-chip">🎓 Master 2 UCO d'Angers</div>
+          <div class="profile-chip">🎯 Dispo stage / poste dès avril 2026</div>
+          <div class="profile-chip">🚗 Mobilité : Grand Ouest & France entière</div>
         </div>
       </div>
 
       <div class="profile-content">
         <div class="glass-card">
-          <h2 class="glass-card-title"><span class="icon">👋</span> Mon Profil</h2>
+          <h2 class="glass-card-title"><span class="icon">⚡</span> Mon Parcours & Ma Démarche</h2>
           <div class="prose">
-            <p>Je m'appelle <strong>Vivien Salmon</strong>, et je suis actuellement en <strong>Master 2 Communication Numérique et création de contenus</strong> à l'UCO d'Angers. J'y développe des compétences variées allant de la création audiovisuelle au SEO, en passant par le graphisme et la gestion de sites web.</p>
-            <p>À la recherche d’un <strong>stage pour début avril 2026</strong>, je souhaite intégrer une entreprise dans la communication sportive ou dans un autre domaine stimulant de la communication.</p>
-            <p>Originaire de Laval, je suis né en 2003 et je suis passionné de sport. J'ai pratiqué le football en club de mes 13 à 19 ans, et aujourd’hui, je m’investis dans la musculation et la course à pied, tout en suivant de près l’actualité sportive. Parallèlement, j’ai un fort intérêt pour l’audiovisuel et le graphisme, des domaines qui me permettent d’exprimer pleinement ma créativité.</p>
+            <p>Je m'appelle <strong>Vivien Salmon</strong>. Actuellement en dernière année de <strong>Master Communication Numérique & Conception Multimédia</strong> à l'Université Catholique de l'Ouest (UCO) d'Angers, j'ai bâti mon cursus avec un objectif clair : être capable d'intervenir sur l'ensemble de la chaîne de valeur de la communication.</p>
+            <p>J'aime être sur le terrain. Que ce soit caméra à l'épaule pour retransmettre un match de volley en direct, un carnet à la main pour interviewer des sportifs pour <em>Ouest-France</em>, ou sur smartphone pour capter un réel TikTok au moment où l'énergie est maximale : j'accorde une importance capitale à l'authenticité des contenus.</p>
+            <p>Je recherche activement un <strong>stage de fin d'études de 6 mois dès début avril 2026</strong>, avec perspective d'embauche, dans une agence, une entreprise ou une structure sportive souhaitant dynamiser sa visibilité et fédérer sa communauté.</p>
           </div>
         </div>
 
         <div class="glass-card">
-          <h2 class="glass-card-title"><span class="icon">✨</span> Mes Passions</h2>
+          <h2 class="glass-card-title"><span class="icon">🧩</span> Ce qui forge ma personnalité</h2>
           <div class="passions-grid">
         <div class="passion-card">
           <div class="passion-icon">⚽🏃</div>
-          <h3 class="passion-title">Sport & Dépassement</h3>
-          <p class="passion-desc">Football en club pendant 6 ans (13-19 ans), pratique assidue de la musculation et de la course à pied. Suivi quotidien de l'actualité sportive.</p>
+          <h3 class="passion-title">Sport, Résilience & Esprit d'équipe</h3>
+          <p class="passion-desc">6 ans de football en club (de mes 13 à 19 ans). Aujourd'hui, course à pied régulière et musculation. Le sport m'a appris la rigueur de l'effort, le sens du collectif et la gestion de la pression lors des moments décisifs.</p>
         </div>
         <div class="passion-card">
-          <div class="passion-icon">🎬📸</div>
-          <h3 class="passion-title">Audiovisuel & Photo</h3>
-          <p class="passion-desc">Photographie avec mon Sony a7 III. Montage vidéo sur DaVinci Resolve, Premiere Pro et Final Cut. Créations graphiques sur Photoshop et Illustrator.</p>
+          <div class="passion-icon">📸🎬</div>
+          <h3 class="passion-title">Création Audiovisuelle & Sens du Cadre</h3>
+          <p class="passion-desc">Équipé d'un boîtier professionnel Sony α7 III, j'aime chercher l'angle juste et le rythme adapté. Du découpage au montage sur DaVinci Resolve ou Premiere Pro, chaque transition doit servir le récit.</p>
         </div>
         <div class="passion-card">
           <div class="passion-icon">♟️</div>
-          <h3 class="passion-title">Échecs en compétition</h3>
-          <p class="passion-desc">Pratique en club depuis mon enfance et participation régulière à des tournois de bon niveau. Esprit tactique, stratégie et concentration.</p>
+          <h3 class="passion-title">Échecs en compétition : Anticipation tactique</h3>
+          <p class="passion-desc">Joueur en club depuis mon enfance et habitué des tournois. Dans les échecs comme dans une stratégie de communication, aucune action n'est laissée au hasard : il faut toujours calculer le coup d'après.</p>
         </div>
         <div class="passion-card">
-          <div class="passion-icon">✈️</div>
-          <h3 class="passion-title">Voyages & Découvertes</h3>
-          <p class="passion-desc">Curieux du monde et des cultures : découverte de l'Italie, l'Espagne, l'Angleterre, Malte, l'Autriche et exploration de nombreuses régions de France.</p>
+          <div class="passion-icon">✈️🌍</div>
+          <h3 class="passion-title">Voyages & Regard Ouvert</h3>
+          <p class="passion-desc">Explorations en Espagne, Italie, Angleterre, Malte et Autriche. Découvrir d'autres cultures nourrit mon ouverture d'esprit et ma curiosité, deux qualités indispensables pour s'adresser à des publics variés.</p>
         </div>
 
           </div>
@@ -96,21 +109,33 @@
       </div>
     </div>
 
-    <!-- CV Vidéo Section -->
-    <div class="glass-card" style="text-align: center;">
-      <h2 class="glass-card-title" style="justify-content: center;"><span class="icon">📹</span> Mon CV Vidéo</h2>
-      <p style="color: var(--text-muted); margin-bottom: 24px;">Vous voulez en savoir plus de manière dynamique ? Découvrez mon CV vidéo ci-dessous !</p>
-      <div style="max-width: 480px; margin: 0 auto;">
-        <img src="assets/images/242689ad-e548-4296-879e-cf847e54a29a.jpg" alt="Vignette CV Vidéo" style="width: 100%; border-radius: 16px; border: 1px solid var(--border-glass); cursor: zoom-in;" onclick="openLightbox('assets/images/242689ad-e548-4296-879e-cf847e54a29a.jpg')">
+    <!-- CV Vidéo Section avec Theater Mode -->
+    <div class="glass-card" style="text-align: center; border-color: rgba(99, 102, 241, 0.4); background: radial-gradient(circle at center, rgba(99, 102, 241, 0.08), rgba(13, 18, 54, 0.9));">
+      <span class="page-badge">Format Vidéo</span>
+      <h2 class="glass-card-title" style="justify-content: center; font-size: 1.8rem;">Mon CV en Vidéo</h2>
+      <p style="color: var(--text-body); max-width: 620px; margin: 0 auto 24px; line-height: 1.7;">
+        Parce que la vidéo est mon média de prédilection, découvrez mon profil, ma voix et mon énergie en images dans ce format court.
+      </p>
+      <div style="max-width: 520px; margin: 0 auto; position: relative;">
+        <div style="position: relative; border-radius: 18px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.7); cursor: pointer;" onclick="openTheaterVideo(0)">
+          <img src="assets/images/242689ad-e548-4296-879e-cf847e54a29a.jpg" alt="Vignette CV Vidéo" style="width: 100%; display: block;" class="zoomable-img">
+          <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; transition: background 0.3s ease;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background: #6366f1; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 0 30px #6366f1; transition: transform 0.2s ease;">▶</div>
+          </div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 12px;">Cliquez pour lancer la lecture en grand écran sans quitter le site</p>
       </div>
     </div>
 
-    <!-- Call to action contact -->
-    <div class="glass-card" style="text-align: center; background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(7, 10, 42, 0.6)); border-color: rgba(99, 102, 241, 0.3);">
-      <h2 class="glass-card-title" style="justify-content: center;">📩 Intéressé par mon profil ? Échangeons ensemble !</h2>
-      <p style="color: var(--text-body); margin-bottom: 24px;">Je suis disponible pour échanger sur vos projets ou une opportunité de stage dès avril 2026.</p>
-      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a href="mailto:vivien.salmon9@gmail.com" class="btn btn-primary">✉️ vivien.salmon9@gmail.com</a>
+    <!-- Contact CTA pour recruteurs -->
+    <div class="glass-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(7, 10, 42, 0.7)); border-color: rgba(99, 102, 241, 0.4);">
+      <div>
+        <h3 style="font-size: 1.4rem; color: #fff; font-weight: 800; font-family: var(--font-heading); margin-bottom: 6px;">Mon profil correspond à vos besoins ?</h3>
+        <p style="color: var(--text-body); max-width: 600px;">Échangeons de vive voix. Je suis disponible pour un premier entretien en visio ou en présentiel.</p>
+      </div>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <button class="btn btn-primary" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier mon email</button>
+        <a href="mailto:vivien.salmon9@gmail.com" class="btn btn-secondary">Envoyer un message ✉️</a>
         <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn ↗</a>
       </div>
     </div>
@@ -118,40 +143,26 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      <div class="footer-brand">
+        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage & graphisme.
+        <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">UCO Angers • Master 2 Communication Numérique & Conception Multimédia</div>
       </div>
-      <div>
-        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
-        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
-        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
+      <div class="footer-links">
+        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'email</button>
+        <a href="mailto:vivien.salmon9@gmail.com" class="footer-link">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
       </div>
     </div>
   </footer>
 
-  <!-- Lightbox Modal -->
-  <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
-  </div>
-
+  <!-- Scripts du visionneur cinéma et lightbox sans redirection -->
+  <script src="assets/js/viewer.js"></script>
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
       if (menu) menu.classList.toggle('open');
     }
-    function openLightbox(src) {
-      const modal = document.getElementById('image-lightbox');
-      const img = document.getElementById('lightbox-img');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function closeLightbox() {
-      document.getElementById('image-lightbox').style.display = 'none';
-    }
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
   </script>
 </body>
 </html>

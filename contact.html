@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Vivien Salmon</title>
-  <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
+  <title>Contact — Vivien Salmon | Portfolio</title>
+  <meta name="description" content="Portfolio de Vivien Salmon : créateur de contenus, vidéaste, graphiste et chargé de communication (Master 2 UCO Angers). En recherche d'un poste / stage.">
   <meta name="author" content="Vivien Salmon">
 
+  <!-- Préchargement rapide des polices pour éliminer tout temps de latence -->
+  <link rel="preload" href="assets/fonts/ftnk-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ftnk-400.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Contact | Vivien Salmon">
-  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
+  <meta property="og:title" content="Contact — Vivien Salmon">
+  <meta property="og:description" content="Découvrez les réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
   <meta property="og:type" content="website">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="stylesheet" href="assets/css/viewer.css">
   <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-title">Vivien Salmon</span>
-        <span class="brand-badge">Portfolio 2025</span>
+        <span class="brand-monogram">VS</span>
+        <div class="brand-info">
+          <span class="brand-title">Vivien Salmon</span>
+          <span class="brand-sub">Communication & Création de Contenus</span>
+        </div>
       </a>
+      <div class="header-status-pill">
+        <span class="pulse-dot"></span>
+        <span>En recherche active de poste / stage</span>
+      </div>
       <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
       <nav>
         <ul class="nav-links" id="nav-menu">
           <li class="nav-item"><a href="index.html" class="">Accueil</a></li>
-<li class="nav-item"><a href="presentation.html" class="">Qui suis-je ?</a></li>
-<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="presentation.html" class="">À propos</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours</a></li>
 <li class="nav-item"><a href="mes-videos.html" class="">Vidéos</a></li>
 <li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
 <li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
-<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photographie</a></li>
 <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
 
         </ul>
@@ -43,41 +55,47 @@
   <main class="page-container">
     <div class="contact-container">
       <div class="contact-card">
-        <img src="assets/images/452bf5c5-27b3-4df2-a961-ef2768ff21f6.jpg" alt="Vivien Salmon" class="contact-avatar">
+        <img src="assets/images/452bf5c5-27b3-4df2-a961-ef2768ff21f6.jpg" alt="Vivien Salmon" class="contact-avatar zoomable-img">
         <h1 class="contact-name">Vivien Salmon</h1>
-        <div class="contact-role">Master 2 Communication Numérique & Création de Contenus</div>
+        <div class="contact-role">Chargé de Communication • Créateur Audiovisuel & Multimédia</div>
         
-        <p style="color: var(--text-body); max-width: 540px; margin: 0 auto 32px; line-height: 1.8;">
-          À la recherche d’un <strong>stage de fin d’études dès début avril 2026</strong> dans la communication sportive ou la création audiovisuelle & multimédia.
+        <p style="color: var(--text-body); max-width: 580px; margin: 0 auto 32px; line-height: 1.8;">
+          Actuellement en recherche d’un <strong>poste ou d’un stage de fin d’études dès avril 2026</strong>. Disponible immédiatement pour échanger autour de vos projets et de vos besoins en communication.
         </p>
 
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 16px; padding: 24px; margin-bottom: 32px; text-align: left;">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-            <span style="font-size: 1.4rem;">✉️</span>
+        <!-- Coordonnées directes -->
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 18px; padding: 28px; margin-bottom: 32px; text-align: left;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; border-bottom: 1px solid var(--border-glass); padding-bottom: 16px;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <span style="font-size: 1.6rem;">✉️</span>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Adresse Email</div>
+                <a href="mailto:vivien.salmon9@gmail.com" style="font-weight: 700; color: #fff; font-size: 1.1rem;">vivien.salmon9@gmail.com</a>
+              </div>
+            </div>
+            <button class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'adresse</button>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px; border-bottom: 1px solid var(--border-glass); padding-bottom: 16px;">
+            <span style="font-size: 1.6rem;">💼</span>
             <div>
-              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Adresse Email</div>
-              <a href="mailto:vivien.salmon9@gmail.com" style="font-weight: 600; color: #fff;">vivien.salmon9@gmail.com</a>
+              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Réseau Professionnel</div>
+              <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="font-weight: 700; color: var(--accent-cyan); font-size: 1.05rem;">linkedin.com/in/vivien-salmon-8b6826255 ↗</a>
             </div>
           </div>
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-            <span style="font-size: 1.4rem;">💼</span>
+
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="font-size: 1.6rem;">📍</span>
             <div>
-              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Profil LinkedIn</div>
-              <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="font-weight: 600; color: var(--accent-cyan);">linkedin.com/in/vivien-salmon-8b6826255 ↗</a>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span style="font-size: 1.4rem;">📍</span>
-            <div>
-              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Localisation</div>
-              <div style="font-weight: 600; color: #fff;">Laval / Angers (Mobile Grand Ouest & France)</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Disponibilité & Mobilité</div>
+              <div style="font-weight: 600; color: #fff;">Laval / Angers — Permis B & Véhiculé (Mobile sur le Grand Ouest & France entière)</div>
             </div>
           </div>
         </div>
 
         <div class="contact-actions">
-          <a href="mailto:vivien.salmon9@gmail.com" class="btn btn-primary">✉️ Envoyer un message</a>
-          <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="btn btn-secondary">Voir mon LinkedIn ↗</a>
+          <a href="mailto:vivien.salmon9@gmail.com" class="btn btn-primary" style="font-size: 1.05rem;">✉️ M'envoyer un email direct</a>
+          <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="btn btn-secondary">Consulter mon profil LinkedIn ↗</a>
         </div>
       </div>
     </div>
@@ -85,40 +103,26 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      <div class="footer-brand">
+        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage & graphisme.
+        <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">UCO Angers • Master 2 Communication Numérique & Conception Multimédia</div>
       </div>
-      <div>
-        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
-        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
-        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
+      <div class="footer-links">
+        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'email</button>
+        <a href="mailto:vivien.salmon9@gmail.com" class="footer-link">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
       </div>
     </div>
   </footer>
 
-  <!-- Lightbox Modal -->
-  <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
-  </div>
-
+  <!-- Scripts du visionneur cinéma et lightbox sans redirection -->
+  <script src="assets/js/viewer.js"></script>
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
       if (menu) menu.classList.toggle('open');
     }
-    function openLightbox(src) {
-      const modal = document.getElementById('image-lightbox');
-      const img = document.getElementById('lightbox-img');
-      img.src = src;
-      modal.style.display = 'flex';
-    }
-    function closeLightbox() {
-      document.getElementById('image-lightbox').style.display = 'none';
-    }
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
   </script>
 </body>
 </html>
