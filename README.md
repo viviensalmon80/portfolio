@@ -6,12 +6,12 @@ Portfolio moderne, élégant et responsive de **Vivien Salmon** (Master 2 Commun
 
 ## ✨ Points Forts du Site
 
-- **Design Moderne & Glassmorphism** : Palette bleu nuit (#070a2a / #0B105B), cartes translucides avec flou d'arrière-plan (`backdrop-filter: blur`), accents lumineux et typographie soignée (*Plus Jakarta Sans*, *Montserrat*, *Futura PT*).
-- **Lecteurs Vidéos Intégrés Google Drive** : Toutes les 11 vidéos hébergées sur votre Google Drive public sont directement lues en streaming haute qualité sans alourdir le dépôt GitHub.
+- **Design Éditorial & Créatif Sur Mesure (Non-IA)** : Ligne graphique épurée Midnight & Cyber-Cyan (#06081B / #0B105B), typographie de caractère (*Plus Jakarta Sans*, *Montserrat*, *Futura PT*), badges d'état en temps réel ("En recherche active de poste / stage"), verbatims et anecdotes terrain authentiques (Sony α7 III, DaVinci Resolve, UCO Angers).
+- **Mode Cinéma & Lecteur Intégré (Zéro Redirection)** : Toutes les vidéos (formats 16:9 cinématographiques et réels verticaux 9:16) s'ouvrent dans une fenêtre cinéma immersive intégrée, avec streaming direct Google Drive, sans jamais quitter la page ni renvoyer l'utilisateur vers un site externe.
+- **Galerie d'Art & Lightbox HD** : Clic sur n'importe quel visuel, affiche de presse ou photographie pour l'agrandir instantanément en haute définition avec navigation au clavier (Échap, Flèches).
 - **Vidéos MP4 locales conservées** : Vos 11 fichiers `.mp4` complets restent disponibles sur votre machine locale dans [`assets/videos/`](file:///c:/Users/JorisSALMON/OneDrive%20-%20talan.com/Documents/BROUILLON/Portfolio-Viv/assets/videos/).
-- **Galerie & Visionneuse (Lightbox)** : Clic sur n'importe quel visuel ou photo pour l'agrandir en haute définition.
-- **Navigation Fluide & Mobile** : Header sticky avec menu hamburger responsive.
-- **GitHub Pages Ready** : Présence du fichier `.nojekyll` et dossiers avec `index.html` pour des URLs propres sans extension `.html`.
+- **Performances & Vitesse Ultra-Rapide** : Polices locales préchargées en WOFF2, images optimisées avec `decoding="async"`, zéro bibliothèque externe lourde, 100% de code CSS/JS natif et léger.
+- **GitHub Pages Ready** : Fichier `.nojekyll` configuré, compatibilité racine et sous-dossiers (`index.html`) pour une navigation fluide sans erreur 404.
 
 ---
 
