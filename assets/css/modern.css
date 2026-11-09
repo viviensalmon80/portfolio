@@ -290,7 +290,8 @@ img {
   max-width: 380px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 25%;
+  /* Cadrage horizontal : recentre le visage (initialement trop à gauche) */
+  object-position: 36% 25%;
   border-radius: var(--r-md);
   filter: grayscale(12%) contrast(1.05);
   display: block;
