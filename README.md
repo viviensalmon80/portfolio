@@ -91,3 +91,4 @@ git push -u origin main
 4. Sélectionnez la branche `main` et le dossier `/ (root)`, puis cliquez sur **Save**.
 5. Votre site sera accessible sous quelques instants à l'adresse :  
    `https://<votre-pseudo>.github.io/<nom-du-repo>/`
+

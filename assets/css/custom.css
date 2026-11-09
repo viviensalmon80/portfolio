@@ -1,98 +1,160 @@
 /* ==========================================================================
    PORTFOLIO VIVIEN SALMON - CUSTOM CSS
-   Styles complémentaires, typographie, lecteur vidéo et lightbox
+   Restauration fidèle des styles, polices locales et interactions du portfolio
    ========================================================================== */
 
-/* Typographie & Couleurs de base */
+@import url('fonts.css');
+
 :root {
-  --bg-color: #0b105b;
-  --text-main: #ffffff;
-  --text-muted: #d0d4e4;
-  --accent-color: #4a6bff;
-  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --bg-color: #0B105B;
+  --text-primary: #ffffff;
+  --text-secondary: #eeeeee;
+  --font-heading: 'shzc', 'ftnk', 'Montserrat', sans-serif;
+  --font-body: 'ftnk', 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-body, html {
+/* Fond général et typographie de base */
+html {
   background-color: var(--bg-color) !important;
-  color: var(--text-main);
-  font-family: var(--font-family) !important;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Remplacer les polices TypeKit par Montserrat */
-.ftnk, [class*="ftnk"],
-.shzc, [class*="shzc"],
-.logo, .title, h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family) !important;
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
 }
 
-/* Image et vignettes - transitions fluides */
+/* CRUCIAL : Forcer la visibilité du contenu principal (masqué par défaut dans le CSS Adobe en attente de leur JS propriétaire) */
+main,
+.grid--main,
+.site-content,
+.site-container,
+.site-wrap {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* En-tête du site */
+.site-header {
+  background-color: var(--bg-color);
+  z-index: 1000;
+}
+
+.logo-text a,
+.logo a {
+  font-family: var(--font-heading) !important;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.nav-container a {
+  font-family: var(--font-body) !important;
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-container a:hover {
+  opacity: 0.85;
+}
+
+.nav-container a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+/* Grille des couvertures de projets (Accueil) */
+.project-covers {
+  width: 100%;
+  clear: both;
+}
+
+.project-cover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* S'assurer que les images chargent et sont immédiatement visibles */
 img {
   max-width: 100%;
   height: auto;
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.image-loaded {
+.image-loaded,
+img.js-lazy.image-loaded {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-/* Animation survol des projets en page d'accueil */
-.project-cover {
-  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+/* Vidéos intégrées */
+.video-player-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
   border-radius: 4px;
   overflow: hidden;
-}
-
-.project-cover:hover {
-  transform: translateY(-4px);
-}
-
-.project-cover .cover-image img {
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.project-cover:hover .cover-image img {
-  transform: scale(1.03);
-}
-
-/* Style des vidéos */
-.video-player-wrapper {
-  background: #000;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
-  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-video {
   width: 100%;
   height: 100%;
   display: block;
+  border: 0;
   outline: none;
 }
 
-/* Navigation active */
-.nav-container a.active,
-.site-header nav a.active {
-  font-weight: 700;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 2px;
-}
-
-/* Hamburger mobile */
-.hamburger-click-area {
-  cursor: pointer;
+/* Lightbox pour les images agrandissables */
+.lightbox-modal {
   display: none;
-  z-index: 1000;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.94);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
 }
 
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90vh;
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Menu Mobile Hamburger */
 @media (max-width: 768px) {
   .hamburger-click-area {
-    display: block;
+    display: block !important;
+    cursor: pointer;
   }
-  
+
   .nav-container {
     display: none;
   }
@@ -104,68 +166,11 @@ img {
     top: 60px;
     left: 0;
     right: 0;
-    background: #0b105b;
+    background: #0B105B;
     padding: 24px;
     gap: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    z-index: 9999;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-
-  .nav-container.open a {
-    font-size: 18px;
-    padding: 8px 0;
-  }
-}
-
-/* Lightbox Modal */
-.lightbox-modal {
-  display: none;
-  position: fixed;
-  z-index: 99999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.92);
-  justify-content: center;
-  align-items: center;
-  cursor: zoom-out;
-  animation: fadeIn 0.25s ease;
-}
-
-.lightbox-content {
-  max-width: 90%;
-  max-height: 90vh;
-  margin: auto;
-  display: block;
-  border-radius: 4px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.8);
-  animation: zoomIn 0.25s ease;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  line-height: 1;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes zoomIn {
-  from { transform: scale(0.9); }
-  to { transform: scale(1); }
-}
-
-/* Curseur zoom sur images agrandissables */
-.lightbox-link, .js-lightbox, .gallery-item img {
-  cursor: pointer;
 }
