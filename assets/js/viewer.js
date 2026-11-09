@@ -369,3 +369,4 @@ function copyEmail(email, btnEl) {
     }, 2500);
   });
 }
+

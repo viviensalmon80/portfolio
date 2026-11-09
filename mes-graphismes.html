@@ -4,19 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graphisme & Web — Vivien Salmon | Portfolio</title>
-  <meta name="description" content="Portfolio de Vivien Salmon : créateur de contenus, vidéaste, graphiste et chargé de communication (Master 2 UCO Angers). En recherche d'un poste / stage.">
+  <meta name="description" content="Portfolio de Vivien Salmon : vidéaste, créateur de contenus et chargé de communication (Master 2 UCO Angers). Disponible pour un poste ou stage dès avril 2026.">
   <meta name="author" content="Vivien Salmon">
-
-  <!-- Préchargement rapide des polices pour éliminer tout temps de latence -->
+  <meta property="og:title" content="Graphisme & Web — Vivien Salmon">
+  <meta property="og:description" content="Réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
+  <meta property="og:type" content="website">
   <link rel="preload" href="assets/fonts/ftnk-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ftnk-400.woff2" as="font" type="font/woff2" crossorigin>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Graphisme & Web — Vivien Salmon">
-  <meta property="og:description" content="Découvrez les réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
-  <meta property="og:type" content="website">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/modern.css">
   <link rel="stylesheet" href="assets/css/viewer.css">
   <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
@@ -25,16 +19,12 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-monogram">VS</span>
-        <div class="brand-info">
-          <span class="brand-title">Vivien Salmon</span>
-          <span class="brand-sub">Communication & Création de Contenus</span>
+        <div class="brand-wordmark">
+          <span class="brand-name">Vivien Salmon</span>
+          <span class="brand-role">Communication &amp; Création de Contenus</span>
         </div>
       </a>
-      <div class="header-status-pill">
-        <span class="pulse-dot"></span>
-        <span>En recherche active de poste / stage</span>
-      </div>
+      <span class="status-tag">Disponible — dès avril 2026</span>
       <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
       <nav>
         <ul class="nav-links" id="nav-menu">
@@ -54,93 +44,250 @@
 
   <main class="page-container">
     <div class="page-header">
-      <span class="page-badge">Identités, Presse & Code</span>
-      <h1 class="page-title">Graphisme, Journalisme & Projets Web</h1>
-      <p class="page-lead">
-        Créer pour l'œil et pour l'écran. Retrouvez ici mes créations graphiques de marque, mes articles rédigés sur le terrain pour la presse régionale et mes projets de développement web.
-      </p>
+      <span class="page-badge">Identités · Presse · Code</span>
+      <h1 class="page-title">Graphisme, Journalisme &amp; Web</h1>
+      <p class="page-lead">Créer pour l'œil et pour l'écran. Identités visuelles, affiches événementielles, +40 articles de presse signés et plateformes web codées en PHP/SQL.</p>
     </div>
 
-    <!-- Section 1 : Logo & Branding -->
-    <div class="section-block">
-      <h2 class="section-title">🎨 01 // Identité Visuelle & Monogramme</h2>
-      <div class="glass-card" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 32px; padding: 36px;">
-        <div style="flex: 1; min-width: 280px;">
-          <h3 style="font-size: 1.3rem; color: #fff; font-weight: 700; margin-bottom: 12px;">Logo personnel "VS"</h3>
-          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 16px;">
-            Conception vectorielle sur Adobe Illustrator. Un tracé géométrique épuré mêlant les lettres <em>V</em> et <em>S</em>, symbolisant la rigueur et le dynamisme du mouvement.
-          </p>
-          <div style="display: flex; gap: 8px;">
-            <span class="theater-tool-tag">Adobe Illustrator</span>
-            <span class="theater-tool-tag">Vectoriel</span>
-            <span class="theater-tool-tag">Branding</span>
+    <!-- Sous-section tabs -->
+    <div class="gfx-tabs" style="margin-bottom:36px;">
+      <a href="#identite" class="gfx-tab">Identité Visuelle</a>
+      <a href="#social" class="gfx-tab">Social Media</a>
+      <a href="#print" class="gfx-tab">Affiches &amp; Print</a>
+      <a href="#presse" class="gfx-tab">Presse (+40 articles)</a>
+      <a href="#web" class="gfx-tab">Développement Web</a>
+    </div>
+
+    <!-- 1. Logo & Identité -->
+    <div id="identite" class="page-header" style="margin-top:0;">
+      <span class="section-label">01 — Identité visuelle</span>
+      <h2 class="section-title">Logo personnel &ldquo;VS&rdquo;</h2>
+    </div>
+    <div class="glass-card" style="display:flex;align-items:center;gap:40px;flex-wrap:wrap;margin-bottom:40px;">
+      <div style="flex:1;min-width:260px;">
+        <p class="prose" style="margin-bottom:16px;">Conception vectorielle sur <strong>Adobe Illustrator</strong>. Tracé géométrique épuré combinant les lettres V et S. Adaptable sur fond sombre, clair et en version monochrome.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="cf-tag">Adobe Illustrator</span>
+          <span class="cf-tag">Vectoriel</span>
+          <span class="cf-tag">Branding</span>
+        </div>
+      </div>
+      <div style="background:var(--bg-alt);padding:28px;border-radius:var(--r-md);border:1px solid var(--border);text-align:center;">
+        <img src="assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Logo VS — Vivien Salmon" style="max-width:200px;cursor:zoom-in;" class="zoomable-img">
+      </div>
+    </div>
+
+    <!-- 2. Social Media Capfun -->
+    <div id="social" class="page-header" style="margin-top:0;">
+      <span class="section-label">02 — Social media</span>
+      <h2 class="section-title">Visuels Instagram &mdash; Capfun Lila</h2>
+    </div>
+    <div class="masonry-grid" style="margin-bottom:40px;">
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" alt="Annonce des temps forts — Capfun Lila" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Annonce des temps forts — Capfun Lila</div>
+            <div class="masonry-cap-tag">Social Media</div>
           </div>
         </div>
-        <div style="background: rgba(4, 6, 20, 0.6); padding: 24px; border-radius: 16px; border: 1px solid var(--border-glass); text-align: center;">
-          <img src="assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Monogramme VS" style="max-width: 220px; cursor: zoom-in;" class="zoomable-img">
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 2 : Visuels Capfun -->
-    <div class="section-block">
-      <h2 class="section-title">🏖️ 02 // Visuels Réseaux Sociaux — Camping Capfun Lila</h2>
-      <div class="image-grid">
-<div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" alt="Visuel Capfun Lila — Annonce des temps forts" loading="lazy" decoding="async"><div class="image-card-caption">Visuel Capfun Lila — Annonce des temps forts</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" alt="Affiche Soirée Festive — Animation camping" loading="lazy" decoding="async"><div class="image-card-caption">Affiche Soirée Festive — Animation camping</div></div>
-      </div>
-    </div>
-
-    <!-- Section 3 : Visuels Handisport -->
-    <div class="section-block">
-      <h2 class="section-title">♿ 03 // Affiches & Supports Print — Comité Handisport Mayenne</h2>
-      <div class="image-grid">
-<div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/757b193c-c6fc-4138-b4a2-c451e9db984d.png" alt="Flyer Sensibilisation & Recrutement — Handisport Mayenne" loading="lazy" decoding="async"><div class="image-card-caption">Flyer Sensibilisation & Recrutement — Handisport Mayenne</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/bbb5b758-591b-492b-85b1-61304ab1fe0b.png" alt="Campagne de valorisation du sport adapté" loading="lazy" decoding="async"><div class="image-card-caption">Campagne de valorisation du sport adapté</div></div>
-      </div>
-    </div>
-
-    <!-- Section 4 : Presse Ouest-France & France Bleu -->
-    <div class="section-block">
-      <h2 class="section-title">📰 04 // Presse Écrite & Rédaction Web (+40 articles parus)</h2>
-      <p style="color: var(--text-muted); margin-bottom: 24px; max-width: 820px; line-height: 1.7;">
-        Une solide expérience d'écriture journalistique : couverture d'événements majeurs en direct (passage de la Flamme Olympique Paris 2024, course cycliste des Boucles de la Mayenne, Festival Les 3 Éléphants), interviews sportives et rédaction web SEO. Cliquez sur un article pour le lire en plein écran.
-      </p>
-      <div class="image-grid">
-<div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png" alt="Ouest-France : Couverture de compétition sportive" loading="lazy" decoding="async"><div class="image-card-caption">Ouest-France : Couverture de compétition sportive</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/ba372bea-34df-4081-93b6-44975db001d3.png" alt="Ouest-France : Article presse print & édition web" loading="lazy" decoding="async"><div class="image-card-caption">Ouest-France : Article presse print & édition web</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png" alt="Ouest-France : Rencontre & interview exclusive" loading="lazy" decoding="async"><div class="image-card-caption">Ouest-France : Rencontre & interview exclusive</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png" alt="Ouest-France : Compte-rendu de match" loading="lazy" decoding="async"><div class="image-card-caption">Ouest-France : Compte-rendu de match</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png" alt="Ouest-France : Chronique de vie sportive" loading="lazy" decoding="async"><div class="image-card-caption">Ouest-France : Chronique de vie sportive</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png" alt="Ouest-France : Reportage en tribune" loading="lazy" decoding="async"><div class="image-card-caption">Ouest-France : Reportage en tribune</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png" alt="France Bleu Mayenne : Passage de la Flamme Olympique" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Passage de la Flamme Olympique</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png" alt="France Bleu Mayenne : Les Boucles de la Mayenne" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Les Boucles de la Mayenne</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png" alt="France Bleu Mayenne : Festival Les 3 Éléphants" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Festival Les 3 Éléphants</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png" alt="France Bleu Mayenne : Article web d'actualité" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Article web d'actualité</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png" alt="France Bleu Mayenne : Réseaux sociaux & story" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Réseaux sociaux & story</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png" alt="France Bleu Mayenne : Couverture événementielle" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Couverture événementielle</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png" alt="France Bleu Mayenne : Reportage terrain" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Reportage terrain</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png" alt="France Bleu Mayenne : Brève sportive" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Brève sportive</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png" alt="France Bleu Mayenne : Publication numérique" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Publication numérique</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png" alt="France Bleu Mayenne : Focus sur un athlète" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Focus sur un athlète</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png" alt="France Bleu Mayenne : Suivi d'étape" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Suivi d'étape</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png" alt="France Bleu Mayenne : Interview radio & web" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Interview radio & web</div></div><div class="image-card" onclick="openGalleryLightbox(0)"><img src="assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png" alt="France Bleu Mayenne : Synthèse de saison" loading="lazy" decoding="async"><div class="image-card-caption">France Bleu Mayenne : Synthèse de saison</div></div>
-      </div>
-    </div>
-
-    <!-- Section 5 : Projets Web avec Mode Théâtre -->
-    <div class="section-block">
-      <h2 class="section-title">💻 05 // Développement Web & Projets Interactifs</h2>
-      <div class="videos-grid">
-        <div class="video-card" onclick="openTheaterVideo(9)" style="cursor: pointer;">
-          <div class="video-frame-wrap" style="position: relative;">
-            <img src="assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Site Ducs d'Angers" style="width: 100%; height: 100%; object-fit: cover;">
-            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;">
-              <div style="width: 56px; height: 56px; border-radius: 50%; background: #6366f1; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">▶</div>
-            </div>
-            <span class="video-badge" style="position: absolute; top: 14px; left: 14px;">PHP / SQL / HTML5</span>
-          </div>
-          <div class="video-info">
-            <h3 class="video-title">Plateforme Web — Ducs d'Angers Hockey</h3>
-            <p class="video-desc">Création complète d'un site avec système de billetterie, gestion d'abonnements saisonniers et base de données relationnelle MySQL.</p>
-            <div style="margin-top: 14px; color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner la démo vidéo en grand ↗</div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" alt="Affiche soirée festive — Animation camping" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Affiche soirée festive — Animation camping</div>
+            <div class="masonry-cap-tag">Print & Affichage</div>
           </div>
         </div>
 
-        <div class="video-card" onclick="openTheaterVideo(10)" style="cursor: pointer;">
-          <div class="video-frame-wrap" style="position: relative;">
-            <img src="assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png" alt="Site Gestes Techniques Football" style="width: 100%; height: 100%; object-fit: cover;">
-            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;">
-              <div style="width: 56px; height: 56px; border-radius: 50%; background: #6366f1; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">▶</div>
-            </div>
-            <span class="video-badge" style="position: absolute; top: 14px; left: 14px;">Code & IA Multimédia</span>
+    </div>
+
+    <!-- 3. Print Handisport -->
+    <div id="print" class="page-header" style="margin-top:0;">
+      <span class="section-label">03 — Print &amp; Affichage</span>
+      <h2 class="section-title">Affiches &mdash; Comité Handisport Mayenne</h2>
+    </div>
+    <div class="masonry-grid" style="margin-bottom:40px;">
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/757b193c-c6fc-4138-b4a2-c451e9db984d.png" alt="Flyer recrutement — Handisport Mayenne" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Flyer recrutement — Handisport Mayenne</div>
+            <div class="masonry-cap-tag">Print</div>
           </div>
-          <div class="video-info">
-            <h3 class="video-title">Guide Interactif des Gestes du Football</h3>
-            <p class="video-desc">Application web pédagogique combinant animations, décryptages vidéo et design épuré pour perfectionner la technique individuelle des joueurs.</p>
-            <div style="margin-top: 14px; color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner la démo vidéo en grand ↗</div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/bbb5b758-591b-492b-85b1-61304ab1fe0b.png" alt="Campagne valorisation du sport adapté" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Campagne valorisation du sport adapté</div>
+            <div class="masonry-cap-tag">Communication</div>
           </div>
+        </div>
+
+    </div>
+
+    <!-- 4. Presse -->
+    <div id="presse" class="page-header" style="margin-top:0;">
+      <span class="section-label">04 — Presse &amp; Rédaction web</span>
+      <h2 class="section-title">+40 articles parus &mdash; Ouest-France &amp; France Bleu</h2>
+      <p class="page-lead">Couverture terrain de la Flamme Olympique Paris 2024, des Boucles de la Mayenne, du Festival Les 3 Éléphants. Interviews sportives, brèves et chroniques. Cliquez pour agrandir.</p>
+    </div>
+    <div class="masonry-grid" style="margin-bottom:40px;">
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png" alt="Ouest-France — Couverture compétition" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Ouest-France — Couverture compétition</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/ba372bea-34df-4081-93b6-44975db001d3.png" alt="Ouest-France — Article print & web" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Ouest-France — Article print & web</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png" alt="Ouest-France — Interview exclusive" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Ouest-France — Interview exclusive</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png" alt="Ouest-France — Compte-rendu de match" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Ouest-France — Compte-rendu de match</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png" alt="Ouest-France — Chronique sportive" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Ouest-France — Chronique sportive</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png" alt="Ouest-France — Reportage en tribune" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">Ouest-France — Reportage en tribune</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png" alt="France Bleu — Flamme Olympique Paris 2024" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Flamme Olympique Paris 2024</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png" alt="France Bleu — Boucles de la Mayenne" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Boucles de la Mayenne</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png" alt="France Bleu — Festival Les 3 Éléphants" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Festival Les 3 Éléphants</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png" alt="France Bleu — Article web d'actualité" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Article web d'actualité</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png" alt="France Bleu — Story réseaux sociaux" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Story réseaux sociaux</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png" alt="France Bleu — Couverture événementielle" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Couverture événementielle</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png" alt="France Bleu — Reportage terrain" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Reportage terrain</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png" alt="France Bleu — Brève sportive" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Brève sportive</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png" alt="France Bleu — Publication numérique" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Publication numérique</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png" alt="France Bleu — Focus sur un athlète" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Focus sur un athlète</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png" alt="France Bleu — Suivi d'étape cycliste" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Suivi d'étape cycliste</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png" alt="France Bleu — Interview radio & web" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Interview radio & web</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+        <div class="masonry-item" onclick="openGalleryLightbox(0)">
+          <img src="assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png" alt="France Bleu — Synthèse de saison" loading="lazy" decoding="async">
+          <div class="masonry-caption">
+            <div class="masonry-cap-title">France Bleu — Synthèse de saison</div>
+            <div class="masonry-cap-tag">Presse</div>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- 5. Web -->
+    <div id="web" class="page-header" style="margin-top:0;">
+      <span class="section-label">05 — Développement web</span>
+      <h2 class="section-title">Projets interactifs &mdash; PHP &amp; SQL</h2>
+    </div>
+    <div class="video-grid">
+      <div class="video-card" onclick="openTheaterVideo(9)">
+        <img src="assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Site Ducs d'Angers" class="vc-thumb" loading="lazy">
+        <div class="vc-play">▶</div>
+        <div class="vc-body">
+          <div class="vc-role">PHP / SQL / HTML5</div>
+          <div class="vc-title">Plateforme Web — Ducs d'Angers Hockey</div>
+          <div class="vc-info">Billetterie · Abonnements · Base de données MySQL</div>
+        </div>
+      </div>
+      <div class="video-card" onclick="openTheaterVideo(10)">
+        <img src="assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png" alt="Site Gestes Foot" class="vc-thumb" loading="lazy">
+        <div class="vc-play">▶</div>
+        <div class="vc-body">
+          <div class="vc-role">Code &amp; Interactif</div>
+          <div class="vc-title">Guide Interactif des Gestes Football</div>
+          <div class="vc-info">Animations · Décryptage vidéo · Design pédagogique</div>
         </div>
       </div>
     </div>
@@ -149,24 +296,22 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage & graphisme.
-        <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">UCO Angers • Master 2 Communication Numérique & Conception Multimédia</div>
+        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage &amp; graphisme.<br>
+        <span style="font-size:0.78rem;">UCO Angers · Master 2 Communication Numérique &amp; Conception Multimédia</span>
       </div>
       <div class="footer-links">
-        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'email</button>
+        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">Copier l'email</button>
         <a href="mailto:vivien.salmon9@gmail.com" class="footer-link">vivien.salmon9@gmail.com</a>
         <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
-        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts du visionneur cinéma et lightbox sans redirection -->
   <script src="assets/js/viewer.js"></script>
   <script>
     function toggleMenu() {
-      const menu = document.getElementById('nav-menu');
-      if (menu) menu.classList.toggle('open');
+      document.getElementById('nav-menu').classList.toggle('open');
     }
   </script>
 </body>

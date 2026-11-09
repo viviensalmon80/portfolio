@@ -4,19 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vidéos — Vivien Salmon | Portfolio</title>
-  <meta name="description" content="Portfolio de Vivien Salmon : créateur de contenus, vidéaste, graphiste et chargé de communication (Master 2 UCO Angers). En recherche d'un poste / stage.">
+  <meta name="description" content="Portfolio de Vivien Salmon : vidéaste, créateur de contenus et chargé de communication (Master 2 UCO Angers). Disponible pour un poste ou stage dès avril 2026.">
   <meta name="author" content="Vivien Salmon">
-
-  <!-- Préchargement rapide des polices pour éliminer tout temps de latence -->
+  <meta property="og:title" content="Vidéos — Vivien Salmon">
+  <meta property="og:description" content="Réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
+  <meta property="og:type" content="website">
   <link rel="preload" href="../assets/fonts/ftnk-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/ftnk-400.woff2" as="font" type="font/woff2" crossorigin>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vidéos — Vivien Salmon">
-  <meta property="og:description" content="Découvrez les réalisations audiovisuelles, graphiques et journalistiques de Vivien Salmon.">
-  <meta property="og:type" content="website">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="../assets/css/modern.css">
   <link rel="stylesheet" href="../assets/css/viewer.css">
   <link rel="icon" type="image/x-icon" href="../assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
@@ -25,16 +19,12 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="../index.html" class="brand">
-        <span class="brand-monogram">VS</span>
-        <div class="brand-info">
-          <span class="brand-title">Vivien Salmon</span>
-          <span class="brand-sub">Communication & Création de Contenus</span>
+        <div class="brand-wordmark">
+          <span class="brand-name">Vivien Salmon</span>
+          <span class="brand-role">Communication &amp; Création de Contenus</span>
         </div>
       </a>
-      <div class="header-status-pill">
-        <span class="pulse-dot"></span>
-        <span>En recherche active de poste / stage</span>
-      </div>
+      <span class="status-tag">Disponible — dès avril 2026</span>
       <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
       <nav>
         <ul class="nav-links" id="nav-menu">
@@ -54,257 +44,147 @@
 
   <main class="page-container">
     <div class="page-header">
-      <span class="page-badge">Showreel & Réalisations Vidéos</span>
-      <h1 class="page-title">Mes Créations Audiovisuelles</h1>
-      <p class="page-lead">
-        Du grand format au format vertical pour les réseaux sociaux : découvrez 11 réalisations vidéo scénarisées, tournées et montées par mes soins. Cliquez sur n'importe quelle vidéo pour la visionner en plein écran avec le son.
-      </p>
+      <span class="page-badge">11 Réalisations</span>
+      <h1 class="page-title">Vidéos</h1>
+      <p class="page-lead">Reportage, réels verticaux, sport en direct, démos web. Chaque film a été cadré, sonné et monté par mes soins. Cliquez sur une vignette pour le lancer en mode cinéma, sans quitter la page.</p>
     </div>
 
-    <!-- Notification interactive -->
-    <div class="glass-card" style="padding: 18px 24px; margin-bottom: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-color: rgba(56, 189, 248, 0.3);">
-      <div style="display: flex; align-items: center; gap: 12px;">
-        <span style="font-size: 1.4rem;">🎬</span>
-        <span style="color: var(--text-body); font-size: 0.95rem;">Cliquez sur une vignette pour lancer le <strong>Mode Cinéma</strong> immersif sans aucune redirection externe.</span>
+    <div class="video-featured" onclick="openTheaterVideo(0)">
+      <img src="../assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" alt="Festival Premiers Plans d'Angers 2025" class="video-featured-thumb" loading="lazy">
+      <button class="video-play-btn" aria-label="Lire">▶</button>
+      <div class="video-featured-overlay">
+        <div class="video-feat-meta">Reportage Cinéma &mdash; En avant-première</div>
+        <div class="video-feat-title">Festival Premiers Plans d'Angers 2025</div>
+        <div class="video-feat-info">02:45 &nbsp;·&nbsp; Sony α7 III • DaVinci Resolve</div>
       </div>
-      <span style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">11 Vidéos disponibles</span>
     </div>
 
-    <div class="videos-grid">
-      <div class="video-card" onclick="openTheaterVideo(0)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" alt="Festival Premiers Plans d'Angers 2025" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Reportage 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">02:45</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Reportage Cinéma</div>
-          <h2 class="video-title">Festival Premiers Plans d'Angers 2025</h2>
-          <p class="video-desc">Reportage officiel réalisé en immersion lors de la 37ème édition du Festival de cinéma Premiers Plans d'Angers. Captation dynamique des masterclasses, interviews de réalisateurs émergents et ambiance générale du festival.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">Sony α7 III </span><span class="theater-tool-tag"> DaVinci Resolve</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
+    <div class="subsection-label">
+      <span>Réels verticaux — Instagram &amp; TikTok</span>
+    </div>
+    <div class="reels-grid" style="margin-bottom:36px;">
+        <div class="reel-card" onclick="openTheaterVideo(1)">
+          <img src="../assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" alt="Réel Immersion — Camping Capfun Lila" class="reel-thumb" loading="lazy" decoding="async">
+          <div class="reel-play">▶</div>
+          <div class="reel-overlay">
+            <div class="reel-title">Réel Immersion — Camping Capfun Lila</div>
+            <div class="reel-meta">00:45</div>
           </div>
         </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(1)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" alt="Réel Immersion — Camping Capfun Lila" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Vertical Reel 9:16</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">00:45</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Format Court / Réel</div>
-          <h2 class="video-title">Réel Immersion — Camping Capfun Lila</h2>
-          <p class="video-desc">Création au format vertical optimisée pour Instagram Reels et TikTok. Mise en scène rythmée du complexe aquatique et de l'énergie des vacanciers pour maximiser la portée organique.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">iPhone 15 Pro </span><span class="theater-tool-tag"> CapCut & Premiere Pro</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
+        <div class="reel-card" onclick="openTheaterVideo(2)">
+          <img src="../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png" alt="Ambiance & Événements Capfun Lila" class="reel-thumb" loading="lazy" decoding="async">
+          <div class="reel-play">▶</div>
+          <div class="reel-overlay">
+            <div class="reel-title">Ambiance & Événements Capfun Lila</div>
+            <div class="reel-meta">00:58</div>
           </div>
         </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(2)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png" alt="Ambiance & Événements Capfun Lila" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Vertical Reel 9:16</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">00:58</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Format Court / Réel</div>
-          <h2 class="video-title">Ambiance & Événements Capfun Lila</h2>
-          <p class="video-desc">Deuxième format court valorisant les animations phares, la mascotte Carabouille et l'expérience client au sein du village de vacances.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">iPhone 15 Pro </span><span class="theater-tool-tag"> CapCut Mobile</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
+        <div class="reel-card" onclick="openTheaterVideo(3)">
+          <img src="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" alt="Trend & Coulisses Animation Capfun Lila" class="reel-thumb" loading="lazy" decoding="async">
+          <div class="reel-play">▶</div>
+          <div class="reel-overlay">
+            <div class="reel-title">Trend & Coulisses Animation Capfun Lila</div>
+            <div class="reel-meta">00:35</div>
           </div>
         </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(3)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" alt="Trend & Coulisses Animation Capfun Lila" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Vertical Reel 9:16</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">00:35</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Social Media</div>
-          <h2 class="video-title">Trend & Coulisses Animation Capfun Lila</h2>
-          <p class="video-desc">Format tendance reprenant les sons viraux de TikTok pour mettre en valeur les animateurs et stimuler l'interaction communautaire.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">iPhone </span><span class="theater-tool-tag"> Montage CapCut</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
+        <div class="reel-card" onclick="openTheaterVideo(4)">
+          <img src="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" alt="Vie au Camping Capfun — Saison Estivale" class="reel-thumb" loading="lazy" decoding="async">
+          <div class="reel-play">▶</div>
+          <div class="reel-overlay">
+            <div class="reel-title">Vie au Camping Capfun — Saison Estivale</div>
+            <div class="reel-meta">00:42</div>
           </div>
         </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(4)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" alt="Vie au Camping Capfun — Saison Estivale" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Vertical Reel 9:16</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">00:42</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Social Media</div>
-          <h2 class="video-title">Vie au Camping Capfun — Saison Estivale</h2>
-          <p class="video-desc">Montage dynamique combinant plans rapprochés des activités, sourires des vacanciers et transitions musicales percutantes.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">iPhone </span><span class="theater-tool-tag"> Premiere Pro</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(5)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" alt="Grandes Soirées & Spectacles Capfun" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Vidéo 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">01:20</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Événementiel</div>
-          <h2 class="video-title">Grandes Soirées & Spectacles Capfun</h2>
-          <p class="video-desc">Captation nocturne en basse lumière des spectacles et jeux interactifs organisés sur la scène principale du camping.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">Sony α7 III </span><span class="theater-tool-tag"> DaVinci Resolve</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(6)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" alt="Intensité & Duel : Match de Handball" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Vidéo Sport 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">01:15</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Sport & Action</div>
-          <h2 class="video-title">Intensité & Duel : Match de Handball</h2>
-          <p class="video-desc">Montage nerveux axé sur la vitesse de circulation de balle, les tirs en suspension et les arrêts décisifs de gardien. Ralentis cinématiques à 120 images par seconde.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">Sony α7 III (120 fps) </span><span class="theater-tool-tag"> Premiere Pro</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(7)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" alt="Entraînement des Professionnels — SCO Handball" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Sport 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">02:10</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Communication Club</div>
-          <h2 class="video-title">Entraînement des Professionnels — SCO Handball</h2>
-          <p class="video-desc">Au cœur de la préparation physique et tactique des joueurs du SCO Handball d'Angers. Prises de vue au ras du sol, son d'ambiance brut et montage immersif.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">Sony α7 III </span><span class="theater-tool-tag"> DaVinci Resolve</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(8)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" alt="Portrait d'un Sportif Universitaire — CROUS" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Interview 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">02:30</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Documentaire / Portrait</div>
-          <h2 class="video-title">Portrait d'un Sportif Universitaire — CROUS</h2>
-          <p class="video-desc">Sujet documentaire retraçant le quotidien exigeant d'un étudiant menant de front ses études supérieures et sa carrière sportive de haut niveau.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">Sony α7 III </span><span class="theater-tool-tag"> Micro cravate HF </span><span class="theater-tool-tag"> DaVinci</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(9)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Démo : Plateforme Web des Ducs d'Angers" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Démo Screencast 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">01:30</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Développement Web</div>
-          <h2 class="video-title">Démo : Plateforme Web des Ducs d'Angers</h2>
-          <p class="video-desc">Présentation vidéo interactive de l'architecture web créée pour le club de hockey sur glace des Ducs d'Angers (billetterie, abonnements, back-office SQL).</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">HTML5 / CSS3 / PHP / MySQL</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
-      <div class="video-card" onclick="openTheaterVideo(10)" style="cursor: pointer;">
-        <div class="video-frame-wrap" style="position: relative;">
-          <img src="../assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png" alt="Démo : Guide Interactif des Gestes du Football" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(4, 6, 20, 0.8)); display: flex; align-items: center; justify-content: center;">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(99, 102, 241, 0.9); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 0 25px rgba(99, 102, 241, 0.6); transition: transform 0.2s ease;">▶</div>
-          </div>
-          <span class="video-badge" style="position: absolute; top: 14px; left: 14px; z-index: 2;">Démo Interactive 16:9</span>
-          <span style="position: absolute; bottom: 14px; right: 14px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px;">01:40</span>
-        </div>
-        <div class="video-info">
-          <div style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Conception Web & IA</div>
-          <h2 class="video-title">Démo : Guide Interactif des Gestes du Football</h2>
-          <p class="video-desc">Parcours utilisateur du site interactif dédié à la pédagogie des dribbles, contrôles orientés et frappes dans le football moderne.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; pt: 12px; border-top: 1px solid var(--border-glass);">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap;"><span class="theater-tool-tag">Code web & Assistants IA</span></div>
-            <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.88rem;">Visionner en grand ↗</span>
-          </div>
-        </div>
-      </div>
 
     </div>
+    <div class="subsection-label">
+      <span>Sport &amp; Terrain</span>
+    </div>
+    <div class="video-grid" style="margin-bottom:36px;">
+        <div class="video-card" onclick="openTheaterVideo(6)">
+          <img src="../assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" alt="Intensité & Duel : Match de Handball" class="vc-thumb" loading="lazy" decoding="async">
+          <div class="vc-play">▶</div>
+          <div class="vc-body">
+            <div class="vc-role">Sport & Action</div>
+            <div class="vc-title">Intensité & Duel : Match de Handball</div>
+            <div class="vc-info" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Sony α7 III (120 fps)</span><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Premiere Pro</span></div>
+          </div>
+        </div>
+        <div class="video-card" onclick="openTheaterVideo(7)">
+          <img src="../assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" alt="Entraînement des Professionnels — SCO Handball" class="vc-thumb" loading="lazy" decoding="async">
+          <div class="vc-play">▶</div>
+          <div class="vc-body">
+            <div class="vc-role">Communication Club</div>
+            <div class="vc-title">Entraînement des Professionnels — SCO Handball</div>
+            <div class="vc-info" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Sony α7 III</span><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">DaVinci Resolve</span></div>
+          </div>
+        </div>
+        <div class="video-card" onclick="openTheaterVideo(10)">
+          <img src="../assets/images/424d2a64-c5fe-4efe-b004-e0a8fef10946.png" alt="Démo : Guide Interactif des Gestes du Football" class="vc-thumb" loading="lazy" decoding="async">
+          <div class="vc-play">▶</div>
+          <div class="vc-body">
+            <div class="vc-role">Conception Web & IA</div>
+            <div class="vc-title">Démo : Guide Interactif des Gestes du Football</div>
+            <div class="vc-info" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Code web & Assistants IA</span></div>
+          </div>
+        </div>
+
+    </div>
+    <div class="subsection-label">
+      <span>Autres productions</span>
+    </div>
+    <div class="video-grid" style="margin-bottom:36px;">
+        <div class="video-card" onclick="openTheaterVideo(5)">
+          <img src="../assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" alt="Grandes Soirées & Spectacles Capfun" class="vc-thumb" loading="lazy" decoding="async">
+          <div class="vc-play">▶</div>
+          <div class="vc-body">
+            <div class="vc-role">Événementiel</div>
+            <div class="vc-title">Grandes Soirées & Spectacles Capfun</div>
+            <div class="vc-info" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Sony α7 III</span><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">DaVinci Resolve</span></div>
+          </div>
+        </div>
+        <div class="video-card" onclick="openTheaterVideo(8)">
+          <img src="../assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" alt="Portrait d'un Sportif Universitaire — CROUS" class="vc-thumb" loading="lazy" decoding="async">
+          <div class="vc-play">▶</div>
+          <div class="vc-body">
+            <div class="vc-role">Documentaire / Portrait</div>
+            <div class="vc-title">Portrait d'un Sportif Universitaire — CROUS</div>
+            <div class="vc-info" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Sony α7 III</span><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">Micro cravate HF</span><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">DaVinci</span></div>
+          </div>
+        </div>
+        <div class="video-card" onclick="openTheaterVideo(9)">
+          <img src="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Démo : Plateforme Web des Ducs d'Angers" class="vc-thumb" loading="lazy" decoding="async">
+          <div class="vc-play">▶</div>
+          <div class="vc-body">
+            <div class="vc-role">Développement Web</div>
+            <div class="vc-title">Démo : Plateforme Web des Ducs d'Angers</div>
+            <div class="vc-info" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;"><span style="font-size:0.68rem;border:1px solid var(--border);padding:2px 8px;border-radius:4px;color:var(--muted);">HTML5 / CSS3 / PHP / MySQL</span></div>
+          </div>
+        </div>
+
+    </div>
+
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage & graphisme.
-        <div style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">UCO Angers • Master 2 Communication Numérique & Conception Multimédia</div>
+        <strong>Vivien Salmon</strong> — Stratégie de communication, tournage, montage &amp; graphisme.<br>
+        <span style="font-size:0.78rem;">UCO Angers · Master 2 Communication Numérique &amp; Conception Multimédia</span>
       </div>
       <div class="footer-links">
-        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">📋 Copier l'email</button>
+        <button class="btn-copy-email" onclick="copyEmail('vivien.salmon9@gmail.com', this)">Copier l'email</button>
         <a href="mailto:vivien.salmon9@gmail.com" class="footer-link">vivien.salmon9@gmail.com</a>
         <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
-        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts du visionneur cinéma et lightbox sans redirection -->
   <script src="../assets/js/viewer.js"></script>
   <script>
     function toggleMenu() {
-      const menu = document.getElementById('nav-menu');
-      if (menu) menu.classList.toggle('open');
+      document.getElementById('nav-menu').classList.toggle('open');
     }
   </script>
 </body>
