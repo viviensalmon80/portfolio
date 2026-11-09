@@ -280,14 +280,21 @@ img {
 
 .hero-right {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-portrait {
   width: 100%;
+  max-width: 380px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 25%;
   border-radius: var(--r-md);
   filter: grayscale(12%) contrast(1.05);
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-portrait-label {
@@ -430,12 +437,18 @@ img {
   aspect-ratio: 16/9;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-alt);
 }
 
 .card-featured .cf-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
   transition: transform 0.6s var(--ease);
 }
 
@@ -544,12 +557,17 @@ img {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
   transition: transform 0.6s var(--ease);
 }
 
@@ -736,6 +754,7 @@ img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: filter 0.3s var(--ease);
 }
@@ -863,6 +882,7 @@ img {
   width: 100%;
   aspect-ratio: 9 / 16;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: filter 0.3s var(--ease);
 }
@@ -940,6 +960,7 @@ img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: filter 0.3s var(--ease);
 }
@@ -1028,7 +1049,11 @@ img {
 
 .masonry-item img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
   display: block;
+  margin: 0 auto;
   transition: filter 0.3s var(--ease);
 }
 
@@ -1112,8 +1137,10 @@ img {
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
+  object-position: center 20%;
   border-radius: var(--r-md);
   filter: grayscale(10%) contrast(1.05);
+  display: block;
 }
 
 .about-bio p {
@@ -1427,7 +1454,9 @@ img {
   width: 100%;
   border-radius: var(--r-sm);
   object-fit: cover;
+  object-position: center;
   max-height: 220px;
+  display: block;
 }
 
 /* =========================================================================
@@ -1456,6 +1485,9 @@ img {
 
 .photo-item img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
   display: block;
   transition: filter 0.3s var(--ease);
 }
