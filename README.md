@@ -1,94 +1,60 @@
-# Portfolio Vivien Salmon
+# Portfolio Vivien Salmon — Communication & Création de Contenus
 
-Site web statique reproduisant fidèlement le portfolio Adobe Portfolio de Vivien Salmon, optimisé pour un hébergement gratuit sur **GitHub Pages**.
+Portfolio moderne, élégant et responsive de **Vivien Salmon** (Master 2 Communication Numérique & Conception Multimédia à l'UCO d'Angers), optimisé pour un hébergement gratuit sur **GitHub Pages**.
 
 ---
 
-## 📁 Structure du Projet
+## ✨ Points Forts du Site
+
+- **Design Moderne & Glassmorphism** : Palette bleu nuit (#070a2a / #0B105B), cartes translucides avec flou d'arrière-plan (`backdrop-filter: blur`), accents lumineux et typographie soignée (*Plus Jakarta Sans*, *Montserrat*, *Futura PT*).
+- **Lecteurs Vidéos Intégrés Google Drive** : Toutes les 11 vidéos hébergées sur votre Google Drive public sont directement lues en streaming haute qualité sans alourdir le dépôt GitHub.
+- **Vidéos MP4 locales conservées** : Vos 11 fichiers `.mp4` complets restent disponibles sur votre machine locale dans [`assets/videos/`](file:///c:/Users/JorisSALMON/OneDrive%20-%20talan.com/Documents/BROUILLON/Portfolio-Viv/assets/videos/).
+- **Galerie & Visionneuse (Lightbox)** : Clic sur n'importe quel visuel ou photo pour l'agrandir en haute définition.
+- **Navigation Fluide & Mobile** : Header sticky avec menu hamburger responsive.
+- **GitHub Pages Ready** : Présence du fichier `.nojekyll` et dossiers avec `index.html` pour des URLs propres sans extension `.html`.
+
+---
+
+## 📁 Structure des Fichiers
 
 ```text
 Portfolio-Viv/
-├── index.html                       # Page d'accueil (Galerie des 6 projets)
-├── presentation.html                # Page "Qui suis-je ?"
-├── mon-parcours-professionnel.html  # Page "Mes expériences et formations"
-├── mes-videos.html                  # Page "Mes vidéos" (9 réalisations vidéo)
-├── mes-graphismes.html              # Page "Mes projets graphiques / web"
-├── experiences-significatives.html  # Page "Expériences significatives"
-├── photos.html                      # Page "Photos" (Galerie de 15 photographies)
-├── contact.html                     # Page "Contact" & Réseaux
-├── .nojekyll                        # Désactive le moteur Jekyll pour GitHub Pages
+├── index.html                       # Accueil (Hero + 6 cartes de projets)
+├── presentation.html                # Qui suis-je ? (Bio, passions, CV vidéo)
+├── mon-parcours-professionnel.html  # Cursus UCO Angers & Compétences
+├── mes-videos.html                  # 9 vidéos en streaming Google Drive
+├── mes-graphismes.html              # Logo, visuels Capfun/Handisport, presse, démos web
+├── experiences-significatives.html  # Capfun, FFVolley, France Bleu, Handisport
+├── photos.html                      # Galerie 15 photographies Capfun Lila
+├── contact.html                     # Contact, email, LinkedIn, disponibilité stage
+├── .nojekyll                        # Empêche Jekyll pour GitHub Pages
 ├── assets/
 │   ├── css/
-│   │   ├── main.css                 # Feuille de style de base
-│   │   ├── theme.css                # Styles complets du thème Marta/Ludwig
-│   │   └── custom.css               # Typographie Montserrat, vidéo & lightbox
-│   ├── js/
-│   │   └── main.js                  # Menu mobile, lightbox & connecteur YouTube
-│   ├── images/                      # 71 images en haute résolution
-│   └── videos/                      # 11 vidéos MP4 téléchargées en local
+│   │   ├── modern.css               # Design system moderne
+│   │   ├── fonts.css                # Polices locales
+│   │   ├── main.css & theme.css     # Styles originaux
+│   ├── images/                      # 71 images haute résolution
+│   └── videos/                      # 11 vidéos MP4 en local
 ```
-
----
-
-## 🎬 Vidéos & YouTube
-
-Toutes les **11 vidéos** ont été téléchargées dans le dossier local `assets/videos/`.
-
-Comme l'une des vidéos dépasse la limite de 100 Mo imposée par GitHub, le dossier `.gitignore` exclut les `.mp4` du dépôt Git. 
-
-### Comment lier vos vidéos YouTube :
-1. Uploadez vos vidéos sur votre chaîne YouTube (en mode *Non répertorié* ou *Public*).
-2. Ouvrez le fichier [`assets/js/main.js`](file:///c:/Users/JorisSALMON/OneDrive%20-%20talan.com/Documents/BROUILLON/Portfolio-Viv/assets/js/main.js).
-3. Remplissez simplement les identifiants YouTube (la partie après `v=` ou `youtu.be/`) dans la variable `YOUTUBE_IDS` :
-
-```javascript
-const YOUTUBE_IDS = {
-  // Page "Mes vidéos"
-  "MhHdTIqQXHc": "VOTRE_ID_YOUTUBE", // Reportage Premiers Plans Angers
-  "NDaW-3QwVh9": "VOTRE_ID_YOUTUBE", // Réel Capfun Lila 1
-  "JqN5PtCQCA8": "VOTRE_ID_YOUTUBE", // Réel Capfun Lila 2
-  "ISPavTSZw4d": "VOTRE_ID_YOUTUBE", // Réel Capfun Lila iPhone/Capcut 1
-  "UGAsVZjdpo_": "VOTRE_ID_YOUTUBE", // Réel Capfun Lila iPhone/Capcut 2
-  "GFPAc9SzMzt": "VOTRE_ID_YOUTUBE", // Vidéo Capfun Lila animations
-  "4_R4cJbV9xU": "VOTRE_ID_YOUTUBE", // Vidéo sportive handball 1
-  "P8oUPQHeeE3": "VOTRE_ID_YOUTUBE", // Vidéo SCO Handball entraînement
-  "2YuRbaoA2Y2": "VOTRE_ID_YOUTUBE", // Portrait sportif CROUS
-
-  // Page "Mes projets graphiques / web"
-  "AoJ2hsW4Ija": "VOTRE_ID_YOUTUBE", // Démo site web Ducs d'Angers
-  "M2CedIzEJzS": "VOTRE_ID_YOUTUBE"  // Démo site web Gestes Techniques Football
-};
-```
-
-Le lecteur basculera automatiquement en lecteur YouTube responsive !
 
 ---
 
 ## 🚀 Mise en ligne sur GitHub Pages
 
-### Étape 1 : Initialiser le dépôt Git
-Ouvrez un terminal dans ce dossier et lancez :
+Le dépôt distant est configuré sur : `https://github.com/viviensalmon80/portfolio.git`.
 
+### Pour pousser vos fichiers :
+Dans votre terminal :
 ```bash
-git init
-git add .
-git commit -m "Reproduction intégrale du Portfolio Vivien Salmon"
-```
-
-### Étape 2 : Lier à votre dépôt GitHub
-Créez un nouveau dépôt vide sur votre compte GitHub (ex: `portfolio`), puis :
-
-```bash
-git branch -M main
-git remote add origin https://github.com/<votre-pseudo>/<nom-du-repo>.git
 git push -u origin main
 ```
+*(Si une fenêtre de connexion GitHub apparaît, autorisez simplement l'accès).*
 
-### Étape 3 : Activer GitHub Pages
-1. Sur GitHub, rendez-vous dans les **Settings** de votre dépôt.
-2. Dans le menu de gauche, cliquez sur **Pages**.
-3. Dans **Build and deployment** > **Source**, choisissez **Deploy from a branch**.
-4. Sélectionnez la branche `main` et le dossier `/ (root)`, puis cliquez sur **Save**.
-5. Votre site sera accessible sous quelques instants à l'adresse :  
-   `https://<votre-pseudo>.github.io/<nom-du-repo>/`
-
+### Pour activer GitHub Pages sur votre dépôt :
+1. Sur GitHub, ouvrez votre dépôt `viviensalmon80/portfolio`.
+2. Cliquez sur **Settings** (en haut à droite du dépôt).
+3. Dans la colonne de gauche, cliquez sur **Pages**.
+4. Sous **Build and deployment** > **Source**, choisissez **Deploy from a branch**.
+5. Sous **Branch**, sélectionnez **`main`** et le dossier **`/ (root)`**, puis cliquez sur **Save**.
+6. Votre site sera automatiquement en ligne dans les 2 minutes à l'adresse :  
+   `https://viviensalmon80.github.io/portfolio/`

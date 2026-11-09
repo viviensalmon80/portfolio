@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="responsive">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,197 +7,118 @@
   <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
   <meta name="author" content="Vivien Salmon">
 
-  <!-- Open Graph / Meta Réseaux Sociaux -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Contact | Vivien Salmon">
-  <meta property="og:description" content="Portfolio de Vivien Salmon - Projets audiovisuels, graphiques et communication.">
+  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts : Montserrat & Inter (Typographie Futura PT alternative) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
-<body class="theme-background">
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-title">Vivien Salmon</span>
+        <span class="brand-badge">Portfolio 2025</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li class="nav-item"><a href="index.html" class="">Accueil</a></li>
+<li class="nav-item"><a href="presentation.html" class="">Qui suis-je ?</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="mes-videos.html" class="">Vidéos</a></li>
+<li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
+<li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
 
-    <div class="page-background-video page-background-video-with-panel">
-      </div>
-  <div class="js-responsive-nav">
-    <div class="responsive-nav has-social">
-      <div class="close-responsive-click-area js-close-responsive-nav">
-        <div class="close-responsive-button"></div>
-      </div>
-          <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                          <div class="gallery-title"><a href="index.html">Accueil</a></div>
-                              <div class="page-title">
-        <a href="contact.html" class=" active">Contact</a>
-      </div>
-</nav>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
-        </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="contact-container">
+      <div class="contact-card">
+        <img src="assets/images/452bf5c5-27b3-4df2-a961-ef2768ff21f6.jpg" alt="Vivien Salmon" class="contact-avatar">
+        <h1 class="contact-name">Vivien Salmon</h1>
+        <div class="contact-role">Master 2 Communication Numérique & Création de Contenus</div>
+        
+        <p style="color: var(--text-body); max-width: 540px; margin: 0 auto 32px; line-height: 1.8;">
+          À la recherche d’un <strong>stage de fin d’études dès début avril 2026</strong> dans la communication sportive ou la création audiovisuelle & multimédia.
+        </p>
+
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 16px; padding: 24px; margin-bottom: 32px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <span style="font-size: 1.4rem;">✉️</span>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Adresse Email</div>
+              <a href="mailto:vivien.salmon9@gmail.com" style="font-weight: 600; color: #fff;">vivien.salmon9@gmail.com</a>
+            </div>
           </div>
-  </div>
-    <header class="site-header js-site-header " data-hover-hint-placement="top-start">
-        <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                        <div class="gallery-title"><a href="index.html">Accueil</a></div>
-                              <div class="page-title">
-        <a href="contact.html" class=" active">Contact</a>
-      </div>
-</nav>
-        <div class="logo-wrap" data-hover-hint-placement="bottom-start">
-          <div class="logo logo-text  ">
-              <a href="index.html" class="preserve-whitespace">Vivien Salmon</a>
-    
-</div>
-        </div>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
-        </div>
-              <div class="hamburger-click-area js-hamburger">
-          <div class="hamburger">
-            <i></i>
-            <i></i>
-            <i></i>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <span style="font-size: 1.4rem;">💼</span>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Profil LinkedIn</div>
+              <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="font-weight: 600; color: var(--accent-cyan);">linkedin.com/in/vivien-salmon-8b6826255 ↗</a>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.4rem;">📍</span>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Localisation</div>
+              <div style="font-weight: 600; color: #fff;">Laval / Angers (Mobile Grand Ouest & France)</div>
+            </div>
           </div>
         </div>
-          </header>
-    <div class="header-placeholder"></div>
-    <div class="site-wrap cfix js-site-wrap">
-    <div class="site-container">
-      <div class="site-content">
-        <main>
-            <div class="page-container">
-              <section class="page standard-modules">
-                  <header class="page-header content">
-            <h1 class="title preserve-whitespace">Contact</h1>
-            <p class="description"></p>
-        </header>
-            <div class="page-content js-page-content">
-        <div id="project-canvas" class="js-project-modules modules content">
-    <div id="project-modules">
-  <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-">
 
-
-     <div class="js-lightbox lightbox-link" data-src="assets/images/efd9c366-d733-4918-a617-cfb0f1c86d12.jpg">
-           <img class="js-lazy image-loaded" src="assets/images/efd9c366-d733-4918-a617-cfb0f1c86d12.jpg" width="1400" srcset="assets/images/efd9c366-d733-4918-a617-cfb0f1c86d12.jpg 600w,assets/images/efd9c366-d733-4918-a617-cfb0f1c86d12.jpg 1200w,assets/images/efd9c366-d733-4918-a617-cfb0f1c86d12.jpg 1400w," sizes="(max-width: 1400px) 100vw, 1400px">
-     </div>
-
-</div>
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>Mon Linkedin:&nbsp;<a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_self">https://www.linkedin.com/in/vivien-salmon-8b6826255/</a></div></div>
-</div>
-  </div>
-  </div>
-</div>
-    </section>
-                  <section class="back-to-top">
-      <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
-    </section>
-    <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint-placement="top-start" href="#">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
-      <g>
-        <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
-          c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
-          c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
-          c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
-          c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
-          c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
-          c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
-      </g>
-      </svg>
-    </a>
-  </div>
-                        <footer class="site-footer">
-                <div class="footer-text">
-                  Powered by <a href="http://portfolio.adobe.com" target="_blank">Adobe Portfolio</a>
-                </div>
-              </footer>
-                  </main>
+        <div class="contact-actions">
+          <a href="mailto:vivien.salmon9@gmail.com" class="btn btn-primary">✉️ Envoyer un message</a>
+          <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" class="btn btn-secondary">Voir mon LinkedIn ↗</a>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
-    <script type="text/javascript">var __config__ = {
-lightbox: {"enabled":1,"color":{"opacity":0.94,"hex":"#fff"}},
-pageTransition: 1,
-linkTransition: 1,
-theme: {"name":"marta/ludwig"},
-};
-
-var __languages__ = {
-  localizedValidationMessages: {}
-};
-</script>
-    <script type="text/javascript" src="https://renderer.myportfolio.com/dist/js/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
-    
-  <div class="js-blocking" id="lightbox-blocking">
-    <span class="lightbox-spinner"></span>
-  </div>
-
-    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
-      <div class="js-img-wrap" id="lightbox-img-wrap">
-        
-  <div class="lightbox-extra control prev js-control js-prev">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control next js-control js-next">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control close js-control js-close">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
-      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
-    </svg>
-  </div>
-
-        <div class="lightbox-contents js-contents"></div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      </div>
+      <div>
+        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
       </div>
     </div>
-  </div>
+  </footer>
 
-
-
-          <script>
-          (function() {
-            function listener(evt) {
-              // prevent user interaction
-              evt.stopPropagation();
-              evt.stopImmediatePropagation();
-              evt.preventDefault();
-            };
-            document.addEventListener('click', listener, true);
-            window.addEventListener('load', function() { document.removeEventListener('click', listener, true); });
-          })();
-          </script>
-        
-
-  <!-- Lightbox Modal pour agrandir les photos -->
+  <!-- Lightbox Modal -->
   <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Agrandissement">
+    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu) menu.classList.toggle('open');
+    }
+    function openLightbox(src) {
+      const modal = document.getElementById('image-lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      modal.style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('image-lightbox').style.display = 'none';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>

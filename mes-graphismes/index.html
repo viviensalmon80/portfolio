@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="responsive">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,710 +7,144 @@
   <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
   <meta name="author" content="Vivien Salmon">
 
-  <!-- Open Graph / Meta Réseaux Sociaux -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Mes projets graphiques / web | Vivien Salmon">
-  <meta property="og:description" content="Portfolio de Vivien Salmon - Projets audiovisuels, graphiques et communication.">
+  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts : Montserrat & Inter (Typographie Futura PT alternative) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/theme.css">
-  <link rel="stylesheet" href="../assets/css/custom.css">
-
-  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/modern.css">
+  <link rel="icon" type="image/x-icon" href="../assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
-<body class="theme-background">
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-title">Vivien Salmon</span>
+        <span class="brand-badge">Portfolio 2025</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li class="nav-item"><a href="../index.html" class="">Accueil</a></li>
+<li class="nav-item"><a href="../presentation.html" class="">Qui suis-je ?</a></li>
+<li class="nav-item"><a href="../mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="../mes-videos.html" class="">Vidéos</a></li>
+<li class="nav-item"><a href="../mes-graphismes.html" class="active">Graphisme & Web</a></li>
+<li class="nav-item"><a href="../experiences-significatives.html" class="">Expériences</a></li>
+<li class="nav-item"><a href="../photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="../contact.html" class="">Contact</a></li>
 
-    <div class="page-background-video page-background-video-with-panel">
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="page-header">
+      <span class="page-badge">Création & Conception</span>
+      <h1 class="page-title">Mes Projets Graphiques & Web</h1>
+      <p class="page-lead">Découvrez mes créations visuelles : identité graphique, visuels pour réseaux sociaux, articles de presse rédigés pour Ouest-France et France Bleu, ainsi que mes réalisations de sites web codés.</p>
+    </div>
+
+    <!-- Section 1 : Logo -->
+    <div class="section-block">
+      <h2 class="section-title">🎨 Identité Visuelle & Logo Personnel</h2>
+      <div class="glass-card" style="display: flex; align-items: center; justify-content: center; padding: 40px;">
+        <img src="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Logo Vivien Salmon" style="max-width: 320px; border-radius: 12px; cursor: zoom-in;" onclick="openLightbox('../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png')">
       </div>
-  <div class="js-responsive-nav">
-    <div class="responsive-nav has-social">
-      <div class="close-responsive-click-area js-close-responsive-nav">
-        <div class="close-responsive-button"></div>
+    </div>
+
+    <!-- Section 2 : Visuels Capfun -->
+    <div class="section-block">
+      <h2 class="section-title">🏖️ Visuels Réseaux Sociaux — Camping Capfun Lila</h2>
+      <div class="image-grid">
+<div class="image-card" onclick="openLightbox('../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png')"><img src="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" alt="Visuel Capfun Lila - Annonce programme" loading="lazy"><div class="image-card-caption">Visuel Capfun Lila - Annonce programme</div></div><div class="image-card" onclick="openLightbox('../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png')"><img src="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" alt="Visuel Réseaux Capfun - Soirée à thème" loading="lazy"><div class="image-card-caption">Visuel Réseaux Capfun - Soirée à thème</div></div>
       </div>
-          <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                          <div class="gallery-title"><a href="../index.html">Accueil</a></div>
-                              <div class="page-title">
-        <a href="../contact.html">Contact</a>
+    </div>
+
+    <!-- Section 3 : Visuels Handisport -->
+    <div class="section-block">
+      <h2 class="section-title">♿ Visuels & Affiches — Comité Handisport de la Mayenne</h2>
+      <div class="image-grid">
+<div class="image-card" onclick="openLightbox('../assets/images/757b193c-c6fc-4138-b4a2-c451e9db984d.png')"><img src="../assets/images/757b193c-c6fc-4138-b4a2-c451e9db984d.png" alt="Flyer Comité Handisport de la Mayenne (Canva)" loading="lazy"><div class="image-card-caption">Flyer Comité Handisport de la Mayenne (Canva)</div></div><div class="image-card" onclick="openLightbox('../assets/images/bbb5b758-591b-492b-85b1-61304ab1fe0b.png')"><img src="../assets/images/bbb5b758-591b-492b-85b1-61304ab1fe0b.png" alt="Affiche promotionnelle Sport Adapté Mayenne" loading="lazy"><div class="image-card-caption">Affiche promotionnelle Sport Adapté Mayenne</div></div>
       </div>
-</nav>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
-        </div>
+    </div>
+
+    <!-- Section 4 : Presse Ouest-France & France Bleu -->
+    <div class="section-block">
+      <h2 class="section-title">📰 Articles de Presse & Rédaction Web (Ouest-France & France Bleu)</h2>
+      <p style="color: var(--text-muted); margin-bottom: 20px;">Plus de 40 articles web & print rédigés, conduite d'interviews de sportifs, prise de photos sur le terrain et couverture d'événements majeurs (Relais de la flamme olympique, Boucles de la Mayenne, Festival 3 Éléphants).</p>
+      <div class="image-grid">
+<div class="image-card" onclick="openLightbox('../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png')"><img src="../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png" alt="Article Ouest-France : Couverture sportive" loading="lazy"><div class="image-card-caption">Article Ouest-France : Couverture sportive</div></div><div class="image-card" onclick="openLightbox('../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png')"><img src="../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png" alt="Article Ouest-France : Presse print & web" loading="lazy"><div class="image-card-caption">Article Ouest-France : Presse print & web</div></div><div class="image-card" onclick="openLightbox('../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png')"><img src="../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png" alt="Article Ouest-France : Interview d'athlète" loading="lazy"><div class="image-card-caption">Article Ouest-France : Interview d'athlète</div></div><div class="image-card" onclick="openLightbox('../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png')"><img src="../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png" alt="Article Ouest-France : Reportage terrain" loading="lazy"><div class="image-card-caption">Article Ouest-France : Reportage terrain</div></div><div class="image-card" onclick="openLightbox('../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png')"><img src="../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png" alt="Article Ouest-France : Actualité locale" loading="lazy"><div class="image-card-caption">Article Ouest-France : Actualité locale</div></div><div class="image-card" onclick="openLightbox('../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png')"><img src="../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png" alt="Article Ouest-France : Rencontre de match" loading="lazy"><div class="image-card-caption">Article Ouest-France : Rencontre de match</div></div><div class="image-card" onclick="openLightbox('../assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png')"><img src="../assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png" alt="France Bleu Mayenne : Flamme Olympique" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Flamme Olympique</div></div><div class="image-card" onclick="openLightbox('../assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png')"><img src="../assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png" alt="France Bleu Mayenne : Boucles de la Mayenne" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Boucles de la Mayenne</div></div><div class="image-card" onclick="openLightbox('../assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png')"><img src="../assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png" alt="France Bleu Mayenne : Festival Les 3 Éléphants" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Festival Les 3 Éléphants</div></div><div class="image-card" onclick="openLightbox('../assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png')"><img src="../assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png" alt="France Bleu Mayenne : Article d'actualité" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Article d'actualité</div></div><div class="image-card" onclick="openLightbox('../assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png')"><img src="../assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png" alt="France Bleu Mayenne : Réseaux sociaux & story" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Réseaux sociaux & story</div></div><div class="image-card" onclick="openLightbox('../assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png')"><img src="../assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png" alt="France Bleu Mayenne : Couverture événementielle" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Couverture événementielle</div></div><div class="image-card" onclick="openLightbox('../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png')"><img src="../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png" alt="France Bleu Mayenne : Reportage en direct" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Reportage en direct</div></div><div class="image-card" onclick="openLightbox('../assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png')"><img src="../assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png" alt="France Bleu Mayenne : Presse locale" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Presse locale</div></div><div class="image-card" onclick="openLightbox('../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png')"><img src="../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png" alt="France Bleu Mayenne : Publication réseaux" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Publication réseaux</div></div><div class="image-card" onclick="openLightbox('../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png')"><img src="../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png" alt="France Bleu Mayenne : Événement sportif" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Événement sportif</div></div><div class="image-card" onclick="openLightbox('../assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png')"><img src="../assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png" alt="France Bleu Mayenne : Suivi d'équipe" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Suivi d'équipe</div></div><div class="image-card" onclick="openLightbox('../assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png')"><img src="../assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png" alt="France Bleu Mayenne : Interview spéciale" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Interview spéciale</div></div><div class="image-card" onclick="openLightbox('../assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png')"><img src="../assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png" alt="France Bleu Mayenne : Bilan de saison" loading="lazy"><div class="image-card-caption">France Bleu Mayenne : Bilan de saison</div></div>
+      </div>
+    </div>
+
+    <!-- Section 6 : Projets Web avec Démos Vidéos -->
+    <div class="section-block">
+      <h2 class="section-title">💻 Projets de Développement Web</h2>
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-frame-wrap">
+            <iframe src="https://drive.google.com/file/d/1LyrEqtECiKwL0-AYLijM9UkeFvsa8LUT/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
           </div>
-  </div>
-    <header class="site-header js-site-header " data-hover-hint-placement="top-start">
-        <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                        <div class="gallery-title"><a href="../index.html">Accueil</a></div>
-                              <div class="page-title">
-        <a href="../contact.html">Contact</a>
-      </div>
-</nav>
-        <div class="logo-wrap" data-hover-hint-placement="bottom-start">
-          <div class="logo logo-text  ">
-              <a href="../index.html" class="preserve-whitespace">Vivien Salmon</a>
-    
-</div>
-        </div>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
-        </div>
-              <div class="hamburger-click-area js-hamburger">
-          <div class="hamburger">
-            <i></i>
-            <i></i>
-            <i></i>
+          <div class="video-info">
+            <span class="video-badge">HTML / CSS / PHP / SQL</span>
+            <h3 class="video-title">Site Web des Ducs d'Angers</h3>
+            <p class="video-desc">Plateforme web complète avec gestion de billetterie, formulaire d'abonnement et base de données MySQL.</p>
           </div>
         </div>
-          </header>
-    <div class="header-placeholder"></div>
-    <div class="site-wrap cfix js-site-wrap">
-    <div class="site-container">
-      <div class="site-content">
-        <main>
-            <div class="page-container">
-              <section class="page standard-modules">
-                  <header class="page-header content">
-            <h1 class="title preserve-whitespace">Mes projets graphiques/ web</h1>
-            <p class="description"></p>
-        </header>
-            <div class="page-content js-page-content">
-        <div id="project-canvas" class="js-project-modules modules content">
-    <div id="project-modules">
-  <div class="project-module module media_collection project-module-media_collection" data-id="m67b348f4517feb05599a132d9d96dad951e1814b864e3b1f723d3" style="padding-top: px;
-padding-bottom: px;
-  width: 21%;
-">
-  <div class="grid--main js-grid-main grid--ready" data-grid-max-images="">
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="354.1949152542373" style="width: 122.606px; flex-grow: 122.606;" data-width="1286" data-height="944">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" srcset="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png 600w,../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png 1200w,../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png 1286w," alt="Logo avec mes initiales r&amp;eacute;alis&amp;eacute; sur illustrator" sizes="(max-width: 1286px) 100vw, 1286px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Logo avec mes initiales réalisé sur illustrator</h6>
-            </div>
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png" alt="Logo avec mes initiales r&amp;eacute;alis&amp;eacute; sur illustrator" sizes="214px" srcset="../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png 600w,../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png 1200w,../assets/images/60b0c4fc-18bf-4a18-8eea-93657e763d1f.png 1286w,">
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Logo avec mes initiales réalisé sur illustrator</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:73.40590979782272%;"></span>
-    </div>
-    <div class="js-grid-spacer" style="display: none;"></div>
-  </div>
-</div>
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>Visuels réalisés au capfun lila.&nbsp;</div></div>
-</div>
-<div class="project-module module media_collection project-module-media_collection" data-id="m68164b553a66f1a55e20e0bd35bf4f0bd723f162dbefbc635c0c9" style="padding-top: px;
-padding-bottom: px;
-  width: 73%;
-">
-  <div class="grid--main js-grid-main grid--ready" data-grid-max-images="">
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="183.82" style="width: 91.91px; flex-grow: 91.91;" data-width="1414" data-height="2000">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" srcset="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png 600w,../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png 1200w,../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png 1414w,"  sizes="(max-width: 1414px) 100vw, 1414px">
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png" sizes="192px" srcset="../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png 600w,../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png 1200w,../assets/images/c69aa0e1-2612-4681-889b-a9b360eae8f0.png 1414w,">
-      <span class="grid__item-filler" style="padding-bottom:141.44271570014143%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="183.82" style="width: 91.91px; flex-grow: 91.91;" data-width="1414" data-height="2000">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" srcset="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png 600w,../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png 1200w,../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png 1414w,"  sizes="(max-width: 1414px) 100vw, 1414px">
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png" sizes="192px" srcset="../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png 600w,../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png 1200w,../assets/images/48420e1a-6b08-4c52-b4e4-56edf56effb1.png 1414w,">
-      <span class="grid__item-filler" style="padding-bottom:141.44271570014143%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="173.33333333333331" style="width: 86.6667px; flex-grow: 86.6667;" data-width="1024" data-height="1536">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png" srcset="../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png 600w,../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png 1024w,"  sizes="(max-width: 1024px) 100vw, 1024px">
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png" sizes="181px" srcset="../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png 600w,../assets/images/0a74b3d5-6a3a-4746-a79e-23b917d63aad.png 1024w,">
-      <span class="grid__item-filler" style="padding-bottom:150%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="173.33333333333331" style="width: 86.6667px; flex-grow: 86.6667;" data-width="1024" data-height="1536">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png" srcset="../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png 600w,../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png 1024w,"  sizes="(max-width: 1024px) 100vw, 1024px">
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png" sizes="181px" srcset="../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png 600w,../assets/images/ba372bea-34df-4081-93b6-44975db001d3.png 1024w,">
-      <span class="grid__item-filler" style="padding-bottom:150%;"></span>
-    </div>
-    <div class="js-grid-spacer" style="display: none;"></div>
-  </div>
-</div>
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>visuels réalisés lors de mon stage au comité handisport de la mayenne</div></div>
-</div>
-<div class="project-module module media_collection project-module-media_collection" data-id="m679c81f14d75069a54eef388f003498ed7fde52248b15f4997bbf" style="padding-top: 0px;
-padding-bottom: px;
-  width: 100%;
-">
-  <div class="grid--main js-grid-main grid--ready" data-grid-max-images="">
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="735.5021216407355" style="width: 569.448px; flex-grow: 569.448;" data-width="3840" data-height="1357">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png" srcset="../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 600w,../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 1200w,../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 1920w,../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 3840w," alt="Flyer r&amp;eacute;alis&amp;eacute; pour le Comit&amp;eacute; Handisport de la Mayenne sur Canva" sizes="(max-width: 3840px) 100vw, 3840px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Flyer réalisé pour le Comité Handisport de la Mayenne sur Canva</h6>
-            </div>
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png" alt="Flyer r&amp;eacute;alis&amp;eacute; pour le Comit&amp;eacute; Handisport de la Mayenne sur Canva" sizes="570px" srcset="../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 600w,../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 1200w,../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 1920w,../assets/images/c43eda30-23d6-4ed5-820a-d273722ac61d.png 3840w,">
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Flyer réalisé pour le Comité Handisport de la Mayenne sur Canva</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:35.35%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="183.82" style="width: 142.319px; flex-grow: 142.319;" data-width="1414" data-height="2000">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png" srcset="../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png 600w,../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png 1200w,../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png 1414w," alt="Affiche de promotion pour inciter &amp;agrave; la pratique du handisport" sizes="(max-width: 1414px) 100vw, 1414px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Affiche de promotion pour inciter à la pratique du handisport</h6>
-            </div>
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png" alt="Affiche de promotion pour inciter &amp;agrave; la pratique du handisport" sizes="142px" srcset="../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png 600w,../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png 1200w,../assets/images/69e278bf-b7c4-4cb0-9734-8aacc968aeb8.png 1414w,">
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Affiche de promotion pour inciter à la pratique du handisport</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:141.44271570014143%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="183.79510022271714" style="width: 142.3px; flex-grow: 142.3;" data-width="1587" data-height="2245">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png" srcset="../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png 600w,../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png 1200w,../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png 1587w," alt="Affiche pour annoncer une &amp;quot;Journ&amp;eacute;e Coh&amp;eacute;sion&amp;quot;" sizes="(max-width: 1587px) 100vw, 1587px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Affiche pour annoncer une &quot;Journée Cohésion&quot;</h6>
-            </div>
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png" alt="Affiche pour annoncer une &amp;quot;Journ&amp;eacute;e Coh&amp;eacute;sion&amp;quot;" sizes="142px" srcset="../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png 600w,../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png 1200w,../assets/images/e0e323ab-eaf3-4cfd-a686-9f32d938c996.png 1587w,">
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Affiche pour annoncer une "Journée Cohésion"</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:141.4618777567738%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="183.79510022271714" style="width: 142.3px; flex-grow: 142.3;" data-width="1587" data-height="2245">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png" srcset="../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png 600w,../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png 1200w,../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png 1587w,"  sizes="(max-width: 1587px) 100vw, 1587px">
-        <div>
-      </script>
-      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png" sizes="142px" srcset="../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png 600w,../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png 1200w,../assets/images/2a0b9487-05bf-49c0-bb13-f9374780f97e.png 1587w,">
-      <span class="grid__item-filler" style="padding-bottom:141.4618777567738%;"></span>
-    </div>
-    <div class="js-grid-spacer" style="display: none;"></div>
-  </div>
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 18">
-<div class="project-module module media_collection project-module-media_collection" data-id="m67a079e73b2d284fbaca18605dedb11268f75c5fcd0f359231eff" style="padding-top: px;
-padding-bottom: px;
-  width: 79%;
-">
-  <div class="grid--main js-grid-main grid--ready" data-grid-max-images="">
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="398.1623277182236" style="width: 199.081px; flex-grow: 199.081;" data-width="1000" data-height="653">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png" srcset="../assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png 600w,../assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png 1000w," alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" sizes="(max-width: 1000px) 100vw, 1000px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" data-src="../assets/images/19df9ec9-caf7-4560-bf55-20e750c1d2a4.png"  sizes="303px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:65.3%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="349.36296296296297" style="width: 174.681px; flex-grow: 174.681;" data-width="907" data-height="675">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png" srcset="../assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png 600w,../assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png 907w," alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" sizes="(max-width: 907px) 100vw, 907px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" data-src="../assets/images/2f31ab4e-6c4b-4fab-b24f-8c5f7e36d93d.png"  sizes="265px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:74.42116868798236%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="372.62672811059906" style="width: 186.313px; flex-grow: 186.313;" data-width="933" data-height="651">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png" srcset="../assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png 600w,../assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png 933w," alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" sizes="(max-width: 933px) 100vw, 933px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" data-src="../assets/images/d25cb8b8-c0e8-4f68-8da1-89d7e335d1a8.png"  sizes="275px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:69.77491961414792%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="397.2107765451664" style="width: 198.605px; flex-grow: 198.605;" data-width="964" data-height="631">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png" srcset="../assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png 600w,../assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png 964w," alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" sizes="(max-width: 964px) 100vw, 964px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" data-src="../assets/images/0f44a4f5-6347-4ad7-9bf9-17696f8432ab.png"  sizes="293px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:65.45643153526972%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="368.8726207906296" style="width: 184.436px; flex-grow: 184.436;" data-width="969" data-height="683">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png" srcset="../assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png 600w,../assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png 969w," alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" sizes="(max-width: 969px) 100vw, 969px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" data-src="../assets/images/6a512ac5-b114-41bf-b366-74a558fcaae8.png"  sizes="283px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:70.48503611971104%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="370.6056129985229" style="width: 185.303px; flex-grow: 185.303;" data-width="965" data-height="677">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png" srcset="../assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png 600w,../assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png 965w," alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" sizes="(max-width: 965px) 100vw, 965px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles publi&amp;eacute;s pour journal Ouest-France Web et print" data-src="../assets/images/6f89ba3e-200b-4113-8e51-f7d712d4b2df.png"  sizes="285px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles publiés pour journal Ouest-France Web et print</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:70.15544041450778%;"></span>
-    </div>
-    <div class="js-grid-spacer" style="display: none;"></div>
-  </div>
-</div>
-        </div>
-        <div class="tree-child-wrapper" style="flex: 7">
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>Rédaction, publication de 20&nbsp;&nbsp;articles pour le journal web et print Ouest France.&nbsp;</div><div>Réalisation d'interviews et prises de photos pour illustrer l'article.</div></div>
-</div>
-        </div>
-  </div>
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 7">
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>rédaction de plus de 20 articles pour le site web de france bleu mayenne.</div><div>Prises de photos pour réaliser les articles &nbsp;couverture d'évènements sportifs. Publication des articles sur les réseaux sociaux.&nbsp;</div></div>
-</div>
-        </div>
-        <div class="tree-child-wrapper" style="flex: 18">
-<div class="project-module module media_collection project-module-media_collection" data-id="m67b30267986fe26a2b69d64167a0ec9e516d0d7ab18fad60a28b5" style="padding-top: px;
-padding-bottom: px;
-  width: 79%;
-">
-  <div class="grid--main js-grid-main grid--ready" data-grid-max-images="">
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="521.5028901734104" style="width: 260.751px; flex-grow: 260.751;" data-width="1388" data-height="692">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png" srcset="../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png 600w,../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png 1200w,../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png 1388w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 1388px) 100vw, 1388px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/52271a02-f732-4524-9e2d-da7c019e4d67.png"  sizes="347px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:49.85590778097983%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="332.1447721179625" style="width: 166.072px; flex-grow: 166.072;" data-width="953" data-height="746">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png" srcset="../assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png 600w,../assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png 953w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 953px) 100vw, 953px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/a8fedb4f-9c6d-4371-b656-52a84b94bc53.png"  sizes="221px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:78.2791185729276%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="530.2481751824818" style="width: 265.124px; flex-grow: 265.124;" data-width="1397" data-height="685">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png" srcset="../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png 600w,../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png 1200w,../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png 1397w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 1397px) 100vw, 1397px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/2b3126c0-e8b1-4d1c-9397-67a596107f68.png"  sizes="347px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:49.033643521832495%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="337.31578947368416" style="width: 168.658px; flex-grow: 168.658;" data-width="986" data-height="760">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png" srcset="../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png 600w,../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png 986w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 986px) 100vw, 986px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/b524655d-3425-4da2-b9b2-11850488d01c.png"  sizes="221px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:77.079107505071%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="344.49141347424046" style="width: 172.246px; flex-grow: 172.246;" data-width="1003" data-height="757">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png" srcset="../assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png 600w,../assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png 1003w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 1003px) 100vw, 1003px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/a76024bb-4632-4760-9c9b-83f6f8d8242f.png"  sizes="185px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:75.47357926221336%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="322.64248704663214" style="width: 161.321px; flex-grow: 161.321;" data-width="958" data-height="772">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png" srcset="../assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png 600w,../assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png 958w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 958px) 100vw, 958px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/36299a0e-603f-4a9c-9331-89043a4b29d2.png"  sizes="174px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:80.58455114822547%;"></span>
-    </div>
-    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="373.6779911373707" style="width: 186.839px; flex-grow: 186.839;" data-width="973" data-height="677">
-      <script type="text/html" class="js-lightbox-slide-content">
-        <div class="grid__image-wrapper">
-          <img class="image-loaded" src="../assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png" srcset="../assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png 600w,../assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png 973w," alt="Plus de 20 articles pour le site web de France Bleu Mayenne" sizes="(max-width: 973px) 100vw, 973px">
-            <div class="grid__image-caption-lightbox">
-              <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-            </div>
-        <div>
-      </script>
-      <img class="image-loaded grid__item-image js-grid__item-image grid__item-image-lazy js-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Plus de 20 articles pour le site web de France Bleu Mayenne" data-src="../assets/images/be5c7f1e-593d-4561-b3ae-36c979ed99a2.png"  sizes="201px" >
-        <div class="grid__image-caption">
-          <h6 class="grid__caption-text">Plus de 20 articles pour le site web de France Bleu Mayenne</h6>
-        </div>
-      <span class="grid__item-filler" style="padding-bottom:69.57862281603289%;"></span>
-    </div>
-    <div class="js-grid-spacer" style="display: none;"></div>
-  </div>
-</div>
-        </div>
-  </div>
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 9">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 85%;
-">
-    <div class="embed-dimensions" style="max-width: 1920px; max-height: 1008px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 52.5%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="AoJ2hsW4Ija" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="../assets/videos/AoJ2hsW4Ija.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
 
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><p>Site web réalisé en code dur html, css, PHP</p></div>
-    </div>
-</div>
-        </div>
-        <div class="tree-child-wrapper" style="flex: 11">
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>Site web réalisé dans le cadre de mes cours de programmations en master. l'objectif est de permettre aux fans de hockey sur glace et des ducs d'angers&nbsp;de pouvoir prendre leur abonnement pour assister aux matchs.&nbsp;</div><div>Création d'une base de données php et sql, et interface du site en html et css.&nbsp;</div></div>
-</div>
-        </div>
-  </div>
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>Site web réalisé lors de mon master avec du code et l'aide de l'ia sur les gestes techniques du football .</div></div>
-</div>
-        </div>
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module">
-    <div class="embed-dimensions" style="max-width: 1280px; max-height: 586px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 45.78%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="M2CedIzEJzS" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="../assets/videos/M2CedIzEJzS.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-</div>
-        </div>
-  </div>
-</div>
-  </div>
-  </div>
-</div>
-    </section>
-                    <section class="other-projects">
-                      <div class="title-wrapper">
-              <div class="title-container">
-                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
-              </div>
-            </div>
-            <div class="project-covers">
-                            <a class="project-cover js-project-cover-touch hold-space" href="../experiences-significatives.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="../assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" data-src="../assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg"  >
+        <div class="video-card">
+          <div class="video-frame-wrap">
+            <iframe src="https://drive.google.com/file/d/1QjYfZx-jNiF9dIAjSJQ4Jx3aj6sJbMUT/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Expériences significatives</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="../presentation.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="../assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" data-src="../assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg"  >
+          <div class="video-info">
+            <span class="video-badge">Code & IA Multimédia</span>
+            <h3 class="video-title">Site des Gestes Techniques du Football</h3>
+            <p class="video-desc">Site pédagogique interactif répertoriant les gestes techniques du football avec animations, vidéos explicatives et design moderne.</p>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Qui suis-je ?</div>
-                              <div class="date"></div>
         </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="../mes-videos.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="../assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" data-src="../assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg"  >
-          </div>
       </div>
     </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Mes vidéos</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="../mon-parcours-professionnel.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="../assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" data-src="../assets/images/b56371cc-ba36-4843-8952-332965da81f0.png"  >
-          </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      </div>
+      <div>
+        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
       </div>
     </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Mes expériences et formations</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="../photos.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="../assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" data-src="../assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg"  >
-          </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Photos</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-            </div>
-                    </section>
-                  <section class="back-to-top">
-      <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
-    </section>
-    <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint-placement="top-start" href="#">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
-      <g>
-        <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
-          c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
-          c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
-          c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
-          c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
-          c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
-          c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
-      </g>
-      </svg>
-    </a>
-  </div>
-                        <footer class="site-footer">
-                <div class="footer-text">
-                  Powered by <a href="http://portfolio.adobe.com" target="_blank">Adobe Portfolio</a>
-                </div>
-              </footer>
-                  </main>
-      </div>
-    </div>
-  </div>
+  </footer>
 
-    <script type="text/javascript">var __config__ = {
-lightbox: {"enabled":1,"color":{"opacity":0.94,"hex":"#fff"}},
-pageTransition: 1,
-linkTransition: 1,
-theme: {"name":"marta/ludwig"},
-};
-
-var __languages__ = {
-  localizedValidationMessages: {}
-};
-</script>
-    <script type="text/javascript" src="https://renderer.myportfolio.com/dist/js/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
-    
-  <div class="js-blocking" id="lightbox-blocking">
-    <span class="lightbox-spinner"></span>
-  </div>
-
-    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
-      <div class="js-img-wrap" id="lightbox-img-wrap">
-        
-  <div class="lightbox-extra control prev js-control js-prev">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control next js-control js-next">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control close js-control js-close">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
-      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
-    </svg>
-  </div>
-
-        <div class="lightbox-contents js-contents"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-          <script>
-          (function() {
-            function listener(evt) {
-              // prevent user interaction
-              evt.stopPropagation();
-              evt.stopImmediatePropagation();
-              evt.preventDefault();
-            };
-            document.addEventListener('click', listener, true);
-            window.addEventListener('load', function() { document.removeEventListener('click', listener, true); });
-          })();
-          </script>
-        
-
-  <!-- Lightbox Modal pour agrandir les photos -->
+  <!-- Lightbox Modal -->
   <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Agrandissement">
+    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
   </div>
 
-  <script src="../assets/js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu) menu.classList.toggle('open');
+    }
+    function openLightbox(src) {
+      const modal = document.getElementById('image-lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      modal.style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('image-lightbox').style.display = 'none';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>

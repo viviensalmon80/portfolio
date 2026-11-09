@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="responsive">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,474 +7,177 @@
   <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
   <meta name="author" content="Vivien Salmon">
 
-  <!-- Open Graph / Meta Réseaux Sociaux -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Mes vidéos | Vivien Salmon">
-  <meta property="og:description" content="Portfolio de Vivien Salmon - Projets audiovisuels, graphiques et communication.">
+  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts : Montserrat & Inter (Typographie Futura PT alternative) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
-<body class="theme-background">
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-title">Vivien Salmon</span>
+        <span class="brand-badge">Portfolio 2025</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li class="nav-item"><a href="index.html" class="">Accueil</a></li>
+<li class="nav-item"><a href="presentation.html" class="">Qui suis-je ?</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="mes-videos.html" class="active">Vidéos</a></li>
+<li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
+<li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="contact.html" class="">Contact</a></li>
 
-    <div class="page-background-video page-background-video-with-panel">
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="page-header">
+      <span class="page-badge">Audiovisuel & Réalisation</span>
+      <h1 class="page-title">Mes Réalisations Vidéos</h1>
+      <p class="page-lead">Je suis passionné par l'audiovisuel. Au cours de mes études, mes expériences professionnelles et mes projets personnels, j'ai eu l'occasion de réaliser et monter de nombreuses vidéos sur DaVinci Resolve, Premiere Pro, Final Cut et CapCut.</p>
+    </div>
+
+    <div class="videos-grid">
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/10E0duauJIZccXrA6owg99XPdankY1MKd/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-badge">Reportage</span>
+          <h2 class="video-title">Festival Premiers Plans d'Angers (Édition 2025)</h2>
+          <p class="video-desc">Reportage complet réalisé et monté pour l'édition 2025 du prestigieux festival de cinéma Premiers Plans à Angers. Interviews, captation d'ambiance et dynamisme.</p>
+        </div>
       </div>
-  <div class="js-responsive-nav">
-    <div class="responsive-nav has-social">
-      <div class="close-responsive-click-area js-close-responsive-nav">
-        <div class="close-responsive-button"></div>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1B3hNdhWnCqqoWAtyQhXBXhrziUaP9Gwe/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-badge">Format Court / Réel</span>
+          <h2 class="video-title">Réel Instagram / TikTok au Capfun Lila</h2>
+          <p class="video-desc">Vidéo au format vertical tournée et publiée lors de mon stage au camping Capfun Lila. Montage dynamique adapté aux codes des réseaux sociaux.</p>
+        </div>
       </div>
-          <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                          <div class="gallery-title"><a href="index.html">Accueil</a></div>
-                              <div class="page-title">
-        <a href="contact.html">Contact</a>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1mZQp-hOkIHcQrcCOF32TZ_0Tt9ysfjgA/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-badge">Social Media</span>
+          <h2 class="video-title">Réel Capfun Lila (Deuxième création)</h2>
+          <p class="video-desc">Deuxième vidéo au format court pour valoriser les infrastructures, le parc aquatique et l'esprit festif du camping.</p>
+        </div>
       </div>
-</nav>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1thxYM5PG0-V0NxUjisGs6RVYtNga7ml-/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
         </div>
-          </div>
-  </div>
-    <header class="site-header js-site-header " data-hover-hint-placement="top-start">
-        <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                        <div class="gallery-title"><a href="index.html">Accueil</a></div>
-                              <div class="page-title">
-        <a href="contact.html">Contact</a>
+        <div class="video-info">
+          <span class="video-badge">Tournage Mobile</span>
+          <h2 class="video-title">Réel Capfun Lila tourné avec iPhone & CapCut</h2>
+          <p class="video-desc">Création spontanée et rythmée tournée à l'iPhone et montée avec CapCut pour maximiser l'engagement des vacanciers sur TikTok & Instagram.</p>
+        </div>
       </div>
-</nav>
-        <div class="logo-wrap" data-hover-hint-placement="bottom-start">
-          <div class="logo logo-text  ">
-              <a href="index.html" class="preserve-whitespace">Vivien Salmon</a>
-    
-</div>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1HdaY9nMlVPHXqNicld7yPIEBjJ7DoWOR/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
+        <div class="video-info">
+          <span class="video-badge">Trend & Humour</span>
+          <h2 class="video-title">Réel Capfun Lila - Tendances & Ambiance</h2>
+          <p class="video-desc">Format tendance reprenant les musiques et concepts populaires pour humaniser les équipes d'animation du camping.</p>
         </div>
-              <div class="hamburger-click-area js-hamburger">
-          <div class="hamburger">
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1gY13kl1KKxZ8wkHK6RKfOv6U7UDjFQri/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
         </div>
-          </header>
-    <div class="header-placeholder"></div>
-    <div class="site-wrap cfix js-site-wrap">
-    <div class="site-container">
-      <div class="site-content">
-        <main>
-            <div class="page-container">
-              <section class="page standard-modules">
-                  <header class="page-header content">
-            <h1 class="title preserve-whitespace">Mes vidéos</h1>
-            <p class="description"></p>
-        </header>
-            <div class="page-content js-page-content">
-        <div id="project-canvas" class="js-project-modules modules content">
-    <div id="project-modules">
-  <div class="project-module module text project-module-text align- js-project-module">
-  <div class="rich-text js-text-editable module-text"><div>Je suis très intéressé par l'audiovisuel.&nbsp;Au cours de mes etudes,&nbsp;mes expériences professionnelles et mes loisirs, j'ai eu l'occasion de réaliser plusieurs vidéos avec le logiciel da vinci, Premiere pro&nbsp; capcut ou encore final cut.</div></div>
-</div>
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 72%;
-">
-    <div class="embed-dimensions" style="max-width: 1280px; max-height: 720px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="MhHdTIqQXHc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/MhHdTIqQXHc.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><p>Reportage réalisé pour l'édition 2025 du festival premiers plans à Angers.</p></div>
-    </div>
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 48%;
-">
-    <div class="embed-dimensions" style="max-width: 1080px; max-height: 1920px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 177.78%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="NDaW-3QwVh9" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/NDaW-3QwVh9.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><p>Réel tourné et publié lors de mon stage au capfun lila</p></div>
-    </div>
-</div>
+        <div class="video-info">
+          <span class="video-badge">Événementiel</span>
+          <h2 class="video-title">Vidéo Animations & Spectacles Capfun Lila</h2>
+          <p class="video-desc">Captation des soirées, jeux et grands spectacles de la saison estivale.</p>
         </div>
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 50%;
-">
-    <div class="embed-dimensions" style="max-width: 1080px; max-height: 1920px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 177.78%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="JqN5PtCQCA8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/JqN5PtCQCA8.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-</div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/18TYMHXwTuS7TUTE-LF-cBVBy24ukBny0/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
         </div>
-  </div>
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 72%;
-">
-    <div class="embed-dimensions" style="max-width: 576px; max-height: 1024px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 177.78%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="ISPavTSZw4d" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/ISPavTSZw4d.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-</div>
+        <div class="video-info">
+          <span class="video-badge">Sport & Action</span>
+          <h2 class="video-title">Vidéo Sportive : Rencontre de Handball</h2>
+          <p class="video-desc">Captation et montage immersif d'un match de handball : actions rapides, ralentis, intensité du jeu.</p>
         </div>
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 75%;
-">
-    <div class="embed-dimensions" style="max-width: 720px; max-height: 1280px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 177.78%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="UGAsVZjdpo_" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/UGAsVZjdpo_.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><p>Réel tourné pour le capfun lila tourné avec iphone et monté avec capcut.&nbsp;<br></p></div>
-    </div>
-</div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1j2TmoB9wZXaT3K1t35cbLKPshKUQ5xQx/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
         </div>
-  </div>
-</div>
-<div class="project-module module video project-module-video js-js-project-module">
-    <div class="embed-dimensions" style="max-width: 360px; max-height: 640px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 177.78%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="GFPAc9SzMzt" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/GFPAc9SzMzt.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-</div>
-<div class="project-module module tree project-module-tree js-js-project-module">
-  <div class="tree-wrapper valign-top">
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 90%;
-">
-    <div class="embed-dimensions" style="max-width: 1920px; max-height: 1080px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="4_R4cJbV9xU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/4_R4cJbV9xU.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><div class="texteditor-inline-lineheight" style="line-height:20px;"><span class="texteditor-inline-fontsize" style="font-size:20px;">Vidéo réalisée pour le sco handball lors d'un entraînement</span></div></div>
-    </div>
-</div>
+        <div class="video-info">
+          <span class="video-badge">Communication Club</span>
+          <h2 class="video-title">Entraînement SCO Handball</h2>
+          <p class="video-desc">Vidéo immersive réalisée pour le SCO Handball lors d'une session d'entraînement intense de l'équipe.</p>
         </div>
-        <div class="tree-child-wrapper" style="flex: 1">
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
-padding-bottom: px;
-  width: 90%;
-">
-    <div class="embed-dimensions" style="max-width: 1920px; max-height: 1080px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="P8oUPQHeeE3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/P8oUPQHeeE3.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
-
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><p><span class="texteditor-inline-fontsize" style="font-size:20px;">Portrait d'un sportif&nbsp;</span></p></div>
-    </div>
-</div>
+      </div>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe src="https://drive.google.com/file/d/1twbzmkwhTryzDlk_vieKRpzDiEGYtsjm/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
         </div>
-  </div>
-</div>
-<div class="project-module module video project-module-video js-js-project-module" style="padding-top: 51px;
-padding-bottom: px;
-  width: 72%;
-">
-    <div class="embed-dimensions" style="max-width: 1920px; max-height: 1080px; margin: 0 auto;">
-    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
-        <div class="video-player-wrapper" data-video-id="2YuRbaoA2Y2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <video class="portfolio-video" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; background: #000; border-radius: 4px;">
-    <source src="assets/videos/2YuRbaoA2Y2.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-  </video>
-</div>
-    </div>
-    </div>
+        <div class="video-info">
+          <span class="video-badge">Interview & Portrait</span>
+          <h2 class="video-title">Portrait d'un Sportif / Promotion CROUS</h2>
+          <p class="video-desc">Portrait vidéo scénarisé d'un étudiant sportif de haut niveau dans le cadre d'une campagne de valorisation du CROUS.</p>
+        </div>
+      </div>
 
-    <div class="project-module module-caption-container js-caption-container align-left">
-      <div class="rich-text module-caption js-text-editable"><p><span class="texteditor-inline-fontsize" style="font-size:20px;">Vidéo pour promouvoir le crous de mon établissement&nbsp;</span></p></div>
     </div>
-</div>
-  </div>
-  </div>
-</div>
-    </section>
-                    <section class="other-projects">
-                      <div class="title-wrapper">
-              <div class="title-container">
-                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
-              </div>
-            </div>
-            <div class="project-covers">
-                            <a class="project-cover js-project-cover-touch hold-space" href="mes-graphismes.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" data-src="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg"  >
-          </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      </div>
+      <div>
+        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
       </div>
     </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Mes projets graphiques/ web</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="photos.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" data-src="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg"  >
-          </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Photos</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="presentation.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" data-src="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg"  >
-          </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Qui suis-je ?</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="experiences-significatives.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" data-src="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg"  >
-          </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Expériences significatives</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="project-cover js-project-cover-touch hold-space" href="mon-parcours-professionnel.html">
-                    <div class="cover-content-container">
-                      <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="image-loaded cover__img js-lazy" src="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" data-src="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png"  >
-          </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                        <div class="details">
-                          <div class="details-inner">
-                              <div class="title preserve-whitespace">Mes expériences et formations</div>
-                              <div class="date"></div>
-        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-            </div>
-                    </section>
-                  <section class="back-to-top">
-      <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
-    </section>
-    <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint-placement="top-start" href="#">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
-      <g>
-        <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
-          c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
-          c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
-          c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
-          c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
-          c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
-          c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
-      </g>
-      </svg>
-    </a>
-  </div>
-                        <footer class="site-footer">
-                <div class="footer-text">
-                  Powered by <a href="http://portfolio.adobe.com" target="_blank">Adobe Portfolio</a>
-                </div>
-              </footer>
-                  </main>
-      </div>
-    </div>
-  </div>
+  </footer>
 
-    <script type="text/javascript">var __config__ = {
-lightbox: {"enabled":1,"color":{"opacity":0.94,"hex":"#fff"}},
-pageTransition: 1,
-linkTransition: 1,
-theme: {"name":"marta/ludwig"},
-};
-
-var __languages__ = {
-  localizedValidationMessages: {}
-};
-</script>
-    <script type="text/javascript" src="https://renderer.myportfolio.com/dist/js/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
-    
-  <div class="js-blocking" id="lightbox-blocking">
-    <span class="lightbox-spinner"></span>
-  </div>
-
-    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
-      <div class="js-img-wrap" id="lightbox-img-wrap">
-        
-  <div class="lightbox-extra control prev js-control js-prev">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control next js-control js-next">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control close js-control js-close">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
-      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
-    </svg>
-  </div>
-
-        <div class="lightbox-contents js-contents"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-          <script>
-          (function() {
-            function listener(evt) {
-              // prevent user interaction
-              evt.stopPropagation();
-              evt.stopImmediatePropagation();
-              evt.preventDefault();
-            };
-            document.addEventListener('click', listener, true);
-            window.addEventListener('load', function() { document.removeEventListener('click', listener, true); });
-          })();
-          </script>
-        
-
-  <!-- Lightbox Modal pour agrandir les photos -->
+  <!-- Lightbox Modal -->
   <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Agrandissement">
+    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu) menu.classList.toggle('open');
+    }
+    function openLightbox(src) {
+      const modal = document.getElementById('image-lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      modal.style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('image-lightbox').style.display = 'none';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>

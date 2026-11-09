@@ -1,292 +1,204 @@
 <!DOCTYPE html>
-<html lang="fr" class="responsive">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivien Salmon | Accueil</title>
+  <title>Accueil | Vivien Salmon</title>
   <meta name="description" content="Portfolio de Vivien Salmon - Master en Communication Numérique et création de contenus (Audiovisuel, Graphisme, Web, Sport).">
   <meta name="author" content="Vivien Salmon">
 
-  <!-- Open Graph / Meta Réseaux Sociaux -->
-  <meta property="og:title" content="Vivien Salmon | Accueil">
-  <meta property="og:description" content="Portfolio de Vivien Salmon - Projets audiovisuels, graphiques et communication.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Accueil | Vivien Salmon">
+  <meta property="og:description" content="Découvrez les réalisations en communication, audiovisuel et graphisme de Vivien Salmon.">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts : Montserrat & Inter (Typographie Futura PT alternative) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/modern.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg">
 </head>
-<body class="theme-background">
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-title">Vivien Salmon</span>
+        <span class="brand-badge">Portfolio 2025</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li class="nav-item"><a href="index.html" class="active">Accueil</a></li>
+<li class="nav-item"><a href="presentation.html" class="">Qui suis-je ?</a></li>
+<li class="nav-item"><a href="mon-parcours-professionnel.html" class="">Parcours & Formations</a></li>
+<li class="nav-item"><a href="mes-videos.html" class="">Vidéos</a></li>
+<li class="nav-item"><a href="mes-graphismes.html" class="">Graphisme & Web</a></li>
+<li class="nav-item"><a href="experiences-significatives.html" class="">Expériences</a></li>
+<li class="nav-item"><a href="photos.html" class="">Photos</a></li>
+<li class="nav-item"><a href="contact.html" class="">Contact</a></li>
 
-    <div class="page-background-video page-background-video-with-panel">
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        <span>À la recherche d'un stage de fin d'études dès avril 2026</span>
       </div>
-  <div class="js-responsive-nav">
-    <div class="responsive-nav has-social">
-      <div class="close-responsive-click-area js-close-responsive-nav">
-        <div class="close-responsive-button"></div>
+      <h1 class="hero-title">
+        Vivien Salmon<br>
+        <span class="gradient-text">Communication & Création de Contenus</span>
+      </h1>
+      <p class="hero-subtitle">
+        Étudiant en Master 2 Communication Numérique & Conception Multimédia à l'UCO d'Angers.<br>
+        Spécialisé dans la réalisation audiovisuelle, le graphisme, le web et la communication sportive.
+      </p>
+      <div class="hero-chips">
+        <div class="chip">🎓 Master 2 UCO Angers</div>
+        <div class="chip">🎬 Montage DaVinci & Premiere</div>
+        <div class="chip">🎨 Suite Adobe (Photoshop, Illustrator)</div>
+        <div class="chip">⚽ Passionné de Sport</div>
+        <div class="chip">📍 Laval / Angers</div>
       </div>
-          <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                          <div class="gallery-title"><a href="index.html" class=" active">Accueil</a></div>
-                              <div class="page-title">
-        <a href="contact.html">Contact</a>
-      </div>
-</nav>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
-        </div>
-          </div>
-  </div>
-    <header class="site-header js-site-header " data-hover-hint-placement="top-start">
-        <nav class="nav-container" data-hover-hint-placement="bottom-start">
-                        <div class="gallery-title"><a href="index.html" class=" active">Accueil</a></div>
-                              <div class="page-title">
-        <a href="contact.html">Contact</a>
-      </div>
-</nav>
-        <div class="logo-wrap" data-hover-hint-placement="bottom-start">
-          <div class="logo logo-text  ">
-              <a href="index.html" class="preserve-whitespace active">Vivien Salmon</a>
-    
-</div>
-        </div>
-        <div class="social pf-nav-social" data-hover-hint-placement="bottom-start">
-          <ul>
-                </ul>
-        </div>
-              <div class="hamburger-click-area js-hamburger">
-          <div class="hamburger">
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
-        </div>
-          </header>
-    <div class="header-placeholder"></div>
-    <div class="site-wrap cfix js-site-wrap">
-    <div class="site-container">
-      <div class="site-content">
-        <main>
-          <section class="project-covers">
-                    <a class="project-cover js-project-cover-touch hold-space" href="presentation.html">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="cover__img js-lazy image-loaded" src="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" srcset="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg 640w, assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg 1280w, assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg 1366w, assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg 1920w, assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg 2560w, assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)">
-          </div>
+      <div style="display: flex; justify-content: center; gap: 16px;">
+        <a href="contact.html" class="btn btn-primary">Me contacter ✉️</a>
+        <a href="presentation.html" class="btn btn-secondary">Découvrir mon profil →</a>
       </div>
     </div>
-    <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Qui suis-je ?</div>
-                      <div class="date">2025</div>
+  </section>
+  <main class="main-content">
+    <div class="projects-grid">
+      <a href="presentation.html" class="project-card">
+        <div class="card-media">
+          <img src="assets/images/df40b5a6-50cd-4efb-aca2-fb237456830f.jpg" alt="Qui suis-je ?" loading="lazy">
+          <span class="card-badge">2025</span>
         </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="mon-parcours-professionnel.html">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="cover__img js-lazy image-loaded" src="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" srcset="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png 640w, assets/images/b56371cc-ba36-4843-8952-332965da81f0.png 1280w, assets/images/b56371cc-ba36-4843-8952-332965da81f0.png 1366w, assets/images/b56371cc-ba36-4843-8952-332965da81f0.png 1920w, assets/images/b56371cc-ba36-4843-8952-332965da81f0.png 2560w, assets/images/b56371cc-ba36-4843-8952-332965da81f0.png 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)">
+        <div class="card-body">
+          <div class="card-meta">Profil & Présentation</div>
+          <h2 class="card-title">Qui suis-je ?</h2>
+          <p class="card-desc">Mon profil, ma formation en Master 2 à l'UCO d'Angers, mes passions (sport, audiovisuel, échecs, voyages) et mon CV vidéo.</p>
+          <div class="card-footer">
+            <span>Explorer le projet</span>
+            <span class="card-arrow">→</span>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Mes expériences et formations</div>
-                      <div class="date">2025</div>
         </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="mes-videos.html">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="cover__img js-lazy image-loaded" src="assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" srcset="assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg 640w, assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg 1280w, assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg 1366w, assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg 1920w, assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg 2560w, assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)">
+      </a>
+      <a href="mon-parcours-professionnel.html" class="project-card">
+        <div class="card-media">
+          <img src="assets/images/b56371cc-ba36-4843-8952-332965da81f0.png" alt="Mes expériences et formations" loading="lazy">
+          <span class="card-badge">2025</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">Parcours Académique & Pro</div>
+          <h2 class="card-title">Mes expériences et formations</h2>
+          <p class="card-desc">Licence Information-Communication et Master Communication Numérique & Conception Multimédia à l'UCO d'Angers.</p>
+          <div class="card-footer">
+            <span>Explorer le projet</span>
+            <span class="card-arrow">→</span>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Mes vidéos</div>
-                      <div class="date">2025</div>
         </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="mes-graphismes.html">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="cover__img js-lazy image-loaded" src="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" srcset="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg 640w, assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg 1280w, assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg 1366w, assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg 1920w, assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg 2560w, assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)">
+      </a>
+      <a href="mes-videos.html" class="project-card">
+        <div class="card-media">
+          <img src="assets/images/d12af3aa-7905-41d2-b6ae-fbea61eba63c.jpg" alt="Mes vidéos" loading="lazy">
+          <span class="card-badge">2025</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">Réalisation Audiovisuelle</div>
+          <h2 class="card-title">Mes vidéos</h2>
+          <p class="card-desc">9 créations vidéos : Festival Premiers Plans, Réels Capfun Lila, SCO Handball, portrait promotionnel sportif CROUS.</p>
+          <div class="card-footer">
+            <span>Explorer le projet</span>
+            <span class="card-arrow">→</span>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Mes projets graphiques/ web</div>
-                      <div class="date">2025</div>
         </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="experiences-significatives.html">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="cover__img js-lazy image-loaded" src="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" srcset="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg 640w, assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg 1280w, assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg 1366w, assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg 1920w, assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg 2560w, assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)">
+      </a>
+      <a href="mes-graphismes.html" class="project-card">
+        <div class="card-media">
+          <img src="assets/images/907d4c2e-0741-4104-9ed9-50283b5674a9.jpg" alt="Mes projets graphiques / web" loading="lazy">
+          <span class="card-badge">2025</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">Graphisme & Dev Web</div>
+          <h2 class="card-title">Mes projets graphiques / web</h2>
+          <p class="card-desc">Logo personnel, affiches Capfun & Handisport, +40 articles de presse Ouest-France & France Bleu, et sites web codés.</p>
+          <div class="card-footer">
+            <span>Explorer le projet</span>
+            <span class="card-arrow">→</span>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Expériences significatives</div>
-                      <div class="date">2025</div>
         </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="project-cover js-project-cover-touch hold-space" href="photos.html">
-            <div class="cover-content-container">
-              <div class="cover-image-wrap">
-      <div class="cover-image">
-          <div class="cover cover-normal">
-                <img class="cover__img js-lazy image-loaded" src="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" srcset="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg 640w, assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg 1280w, assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg 1366w, assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg 1920w, assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg 2560w, assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(100vw / 2)">
+      </a>
+      <a href="experiences-significatives.html" class="project-card">
+        <div class="card-media">
+          <img src="assets/images/af6bd10b-c930-49c2-93ee-7b8ddaea50be.jpg" alt="Expériences significatives" loading="lazy">
+          <span class="card-badge">2025</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">Missions Clés</div>
+          <h2 class="card-title">Expériences significatives</h2>
+          <p class="card-desc">Community Manager Capfun Lila, Cadreur bénévole FFVolley, Stage France Bleu Mayenne et Comité Handisport.</p>
+          <div class="card-footer">
+            <span>Explorer le projet</span>
+            <span class="card-arrow">→</span>
           </div>
-      </div>
-    </div>
-    <div class="details-wrap">
-                <div class="details">
-                  <div class="details-inner">
-                      <div class="title preserve-whitespace">Photos</div>
-                      <div class="date">2025</div>
         </div>
-                </div>
-              </div>
-            </div>
-          </a>
-</section>
-              <section class="back-to-top">
-      <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
-    </section>
-    <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint-placement="top-start" href="#">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
-      <g>
-        <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
-          c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
-          c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
-          c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
-          c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
-          c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
-          c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
-      </g>
-      </svg>
-    </a>
-              <footer class="site-footer">
-                <div class="footer-text">
-                  Powered by <a href="http://portfolio.adobe.com" target="_blank">Adobe Portfolio</a>
-                </div>
-              </footer>
-                  </main>
+      </a>
+      <a href="photos.html" class="project-card">
+        <div class="card-media">
+          <img src="assets/images/78d28d3b-9b87-4e34-a9a2-33beeb02f6df.jpg" alt="Photos" loading="lazy">
+          <span class="card-badge">2025</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">Photographie</div>
+          <h2 class="card-title">Photos</h2>
+          <p class="card-desc">Galerie de 15 photographies prises au Capfun Lila avec mon iPhone. Découverte des ambiances, paysages et activités.</p>
+          <div class="card-footer">
+            <span>Explorer le projet</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Vivien Salmon</strong> — Master 2 Communication Numérique & Conception Multimédia
+      </div>
+      <div>
+        <a href="mailto:vivien.salmon9@gmail.com" style="margin-right: 18px;">vivien.salmon9@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vivien-salmon-8b6826255/" target="_blank" rel="noopener" style="margin-right: 18px;">LinkedIn ↗</a>
+        <button class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Haut de page</button>
       </div>
     </div>
-  </div>
+  </footer>
 
-    <script type="text/javascript">var __config__ = {
-lightbox: {"enabled":1,"color":{"opacity":0.94,"hex":"#fff"}},
-pageTransition: 1,
-linkTransition: 1,
-theme: {"name":"marta/ludwig"},
-};
-
-var __languages__ = {
-  localizedValidationMessages: {}
-};
-</script>
-    <script type="text/javascript" src="https://renderer.myportfolio.com/dist/js/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
-    
-  <div class="js-blocking" id="lightbox-blocking">
-    <span class="lightbox-spinner"></span>
-  </div>
-
-    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
-      <div class="js-img-wrap" id="lightbox-img-wrap">
-        
-  <div class="lightbox-extra control prev js-control js-prev">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control next js-control js-next">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
-      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
-      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
-    </svg>
-  </div>
-
-        
-  <div class="lightbox-extra control close js-control js-close">
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
-      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
-    </svg>
-  </div>
-
-        <div class="lightbox-contents js-contents"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-          <script>
-          (function() {
-            function listener(evt) {
-              // prevent user interaction
-              evt.stopPropagation();
-              evt.stopImmediatePropagation();
-              evt.preventDefault();
-            };
-            document.addEventListener('click', listener, true);
-            window.addEventListener('load', function() { document.removeEventListener('click', listener, true); });
-          })();
-          </script>
-        
-
-  <!-- Lightbox Modal pour agrandir les photos -->
+  <!-- Lightbox Modal -->
   <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Agrandissement">
+    <img class="lightbox-content" id="lightbox-img" alt="Zoom image">
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu) menu.classList.toggle('open');
+    }
+    function openLightbox(src) {
+      const modal = document.getElementById('image-lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      modal.style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('image-lightbox').style.display = 'none';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>
